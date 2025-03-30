@@ -103,6 +103,68 @@ const ITProjectTraining = () => (
               Enroll Now
             </Link>
           </div>
+
+          {/* Project Showcase Section */}
+          <div className="mt-20">
+            <h2 className="text-4xl font-bold mb-8 text-gray-900 text-center">Our Recent Projects</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <a href="/projects/e-commerce" className="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img src="/images/project1.jpg" alt="E-commerce Platform" className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">E-commerce Platform</h3>
+                  <p className="text-gray-600">Full-stack e-commerce solution with React and Node.js</p>
+                </div>
+              </a>
+
+              <a href="/projects/healthcare" className="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img src="/images/project2.jpg" alt="Healthcare Management System" className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Healthcare Management</h3>
+                  <p className="text-gray-600">Electronic health records system with secure data handling</p>
+                </div>
+              </a>
+
+              <a href="/projects/fintech" className="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img src="/images/project3.jpg" alt="Fintech Application" className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Fintech Solution</h3>
+                  <p className="text-gray-600">Banking application with real-time transaction processing</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          {/* Client Testimonials */}
+          <div className="mt-20">
+            <h2 className="text-4xl font-bold mb-12 text-gray-900 text-center">Client Testimonials</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <div className="flex items-center mb-4">
+                  <img src="/images/client1.jpg" alt="Client" className="w-12 h-12 rounded-full mr-4" />
+                  <div>
+                    <h4 className="font-bold">Sarah Johnson</h4>
+                    <p className="text-gray-600">CEO, TechStart Inc.</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 italic">
+                  "The team delivered an exceptional e-commerce platform that exceeded our expectations. Their attention to detail and technical expertise were impressive."
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <div className="flex items-center mb-4">
+                  <img src="/images/client2.jpg" alt="Client" className="w-12 h-12 rounded-full mr-4" />
+                  <div>
+                    <h4 className="font-bold">Michael Chen</h4>
+                    <p className="text-gray-600">CTO, HealthTech Solutions</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 italic">
+                  "Our healthcare management system has transformed how we handle patient data. The security implementation is top-notch."
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
