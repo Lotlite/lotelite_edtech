@@ -21,11 +21,11 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
-            <Link to="/corporate-partner-program" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
-              Corporate Programs
+            <Link to="/internship-program" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
+              Internship Programs
             </Link>
-            <Link to="/it-services" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
-              IT Services
+            <Link to="/it-project" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
+              IT Project
             </Link>
             <Link to="/maang-certificates" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
               Certificates

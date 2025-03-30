@@ -48,8 +48,8 @@ function App() {
                   <Route path="/foreign-exchange" element={<ForeignExchange />} />
                   <Route path="/foreign-degree-programs" element={<ForeignDegreePrograms />} />
                   <Route path="/university-partner-program" element={<UniversityPartnerProgram />} />
-                  <Route path="/corporate-partner-program" element={<CorporatePartnerProgram />} />
-                  <Route path="/it-services" element={<ITServices />} />
+                  <Route path="/internship-program" element={<CorporatePartnerProgram />} />
+                  <Route path="/it-project" element={<ITServices />} />
                   <Route path="/contact-us" element={<Contact />} />
                   <Route path="/career" element={<Career />} />
                   <Route path="/about-us" element={<AboutUs />} />
