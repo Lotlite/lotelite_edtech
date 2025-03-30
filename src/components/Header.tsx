@@ -33,9 +33,9 @@ const Header = () => {
             <Link to="/foreign-exchange" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
               Foreign Exchange
             </Link>
-            <Link to="/foreign-degree-programs" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
+            {/* <Link to="/foreign-degree-programs" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
               Foreign Degree
-            </Link>
+            </Link> */}
             <Link to="/university-partner-program" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
               University Partner Program
             </Link>
