@@ -6,7 +6,7 @@ const CorporatePartnerProgram = () => (
     {/* Hero Section */}
     <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
       <div className="container mx-auto px-4">
-        <h1 className="text-5xl font-bold mb-6">Corporate Training Programs</h1>
+        <h1 className="text-5xl font-bold mb-6"> Internship Programs</h1>
         <p className="text-xl text-blue-100 max-w-3xl">
           Empowering your workforce with cutting-edge technical skills through our specialized training programs
         </p>
@@ -18,7 +18,7 @@ const CorporatePartnerProgram = () => (
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-8 text-gray-900 text-center">
-            Our Training Programs
+            Internship Programs
           </h2>
           <p className="text-lg text-gray-600 mb-12 text-center">
             We offer two specialized training programs designed to enhance your team's technical capabilities and prepare them for the challenges of modern software development.
@@ -111,7 +111,7 @@ const CorporatePartnerProgram = () => (
           {/* Program Benefits */}
           <div className="py-16 bg-gray-50 rounded-3xl px-8 mb-20">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
-              Why Choose Our Training Programs?
+              Why Choose Our Internship Programs?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
