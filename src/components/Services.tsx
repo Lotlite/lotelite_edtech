@@ -63,13 +63,13 @@ const Services = () => {
   ];
   
   const tabs = [
-    { id: 'all', label: 'All Services' },
-    { id: 'corporate', label: 'Corporate' },
-    { id: 'it', label: 'IT Services' },
-    { id: 'certificates', label: 'Certificates' },
-    { id: 'exchange', label: 'Exchange' },
-    { id: 'degree', label: 'Degree' },
-    { id: 'university', label: 'University' }
+    // { id: 'all', label: 'All Services' },
+    { id: 'corporate', label: 'Internship Program' },
+    { id: 'it', label: 'Live Projects Program' },
+    { id: 'degree', label: 'Placement Guarantee Program' },
+    { id: 'certificates', label: 'Maang Certificates' },
+    { id: 'exchange', label: 'Foreign Exchange' },
+    { id: 'university', label: 'University Partner Program' }
   ];
   
   const filteredServices = activeTab === 'all' 
