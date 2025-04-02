@@ -10,21 +10,21 @@ const MernProjects = () => {
       id: 1,
       title: "Learn To Build a Real Time Website Like YouTube",
       description: "Step into the World of Video Innovation with YouTube - the Global Video Giant! Join us at NullClass, where we believe in not just following but creating.",
-      image: "/images/youtube-clone.jpg",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3",
       category: "web-dev"
     },
     {
       id: 2,
       title: "Learn To Build a Real Time Website Like Stack Overflow",
       description: "Embark on a Web Odyssey with NullClass - Craft Real-World Applications like Stack Overflow and Redefine Web Development!",
-      image: "/images/stackoverflow-clone.jpg",
+      image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3",
       category: "web-dev"
     },
     {
       id: 3,
       title: "Learn to Build Real Time Website Like Twitter",
       description: "Unlock the Power of Social Networking with Our 'Learn to Build Real Time App Like Twitter'. At NullClass, we believe in not just following but creating.",
-      image: "/images/twitter-clone.jpg",
+      image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3",
       category: "web-dev"
     },
     {
@@ -123,6 +123,9 @@ const MernProjects = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      
+
       <div className="flex">
         {/* Categories Sidebar */}
         <div className="w-64 min-h-screen bg-white border-r p-6">
