@@ -26,6 +26,62 @@ const MernProjects = () => {
       description: "Unlock the Power of Social Networking with Our 'Learn to Build Real Time App Like Twitter'. At NullClass, we believe in not just following but creating.",
       image: "/images/twitter-clone.jpg",
       category: "web-dev"
+    },
+    {
+      id: 4,
+      title: "Learn to Build Real Time Text to Image Generator",
+      description: "Master the art of AI-powered image generation! Create a cutting-edge text-to-image generator using state-of-the-art machine learning models.",
+      image: "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?ixlib=rb-4.0.3",
+      category: "ai-ml"
+    },
+    {
+      id: 5,
+      title: "Learn to Deploy Real Time Text to Image Generator- Gen AI",
+      description: "Take your AI skills to production! Learn to deploy and scale your text-to-image generation system using modern cloud infrastructure.",
+      image: "https://images.unsplash.com/photo-1686191128892-3f0c61ac3286?ixlib=rb-4.0.3",
+      category: "ai-ml"
+    },
+    {
+      id: 6,
+      title: "Learn to Deploy Real Time Website in AWS",
+      description: "Master cloud deployment with AWS! Learn to deploy, scale, and manage web applications using Amazon Web Services infrastructure.",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3",
+      category: "cloud"
+    },
+    {
+      id: 7,
+      title: "Learn to Build Real Time Website Like Make My Trip",
+      description: "Create a full-featured travel booking platform! Master the complexities of building a travel website with real-time booking capabilities.",
+      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3",
+      category: "web-dev"
+    },
+    {
+      id: 8,
+      title: "Learn to Hack Real Time Android OS",
+      description: "Dive deep into Android security! Learn ethical hacking techniques for Android operating systems and mobile application security.",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3",
+      category: "cybersecurity"
+    },
+    {
+      id: 9,
+      title: "Learn to Build a Job Analytics Portal",
+      description: "Create a powerful job market analytics platform! Learn to build data-driven insights for employment trends and career opportunities.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3",
+      category: "data-analytics"
+    },
+    {
+      id: 10,
+      title: "Learn to Build Real Time Website Like RedBus",
+      description: "Master bus booking system development! Create a comprehensive transportation booking platform with real-time availability.",
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3",
+      category: "web-dev"
+    },
+    {
+      id: 11,
+      title: "Learn to Build Real Time Website Like BookMyShow",
+      description: "Build a dynamic event ticketing platform! Create a Python Django-based entertainment booking system with real-time inventory management.",
+      image: "https://images.unsplash.com/photo-1485095329183-d0797cdc5676?ixlib=rb-4.0.3",
+      category: "python"
     }
   ];
 
@@ -36,9 +92,10 @@ const MernProjects = () => {
     { id: "cybersecurity", label: "Cybersecurity" },
     { id: "blockchain", label: "Blockchain" },
     { id: "flutter", label: "Flutter Development" },
-    { id: "data-analyst", label: "Data Analyst" },
+    { id: "data-analytics", label: "Data Analytics" },
     { id: "software-tester", label: "Software Tester" },
-    { id: "frontend", label: "Front-end Web Development" },
+    { id: "ai-ml", label: "AI & Machine Learning" },
+    { id: "python", label: "Python Development" },
     { id: "cloud", label: "Cloud Technology" }
   ];
 
@@ -53,12 +110,10 @@ const MernProjects = () => {
   };
 
   const handleEnroll = (projectId: number) => {
-    // You can add enrollment logic here
     navigate(`/enroll/${projectId}`);
   };
 
   const handleDemo = (projectId: number) => {
-    // You can add demo logic here
     navigate(`/demo/${projectId}`);
   };
 
@@ -94,15 +149,18 @@ const MernProjects = () => {
         <div className="flex-1 p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project) => (
-              <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
+              <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                  <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
+                  <h3 className="text-xl font-semibold mb-3 line-clamp-2">{project.title}</h3>
+                  <p className="text-gray-600 mb-4 text-sm line-clamp-3">{project.description}</p>
                   <div className="flex justify-between">
                     <button 
                       onClick={() => handleEnroll(project.id)}
