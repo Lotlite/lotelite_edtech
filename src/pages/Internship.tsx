@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CorporatePartnerProgram = () => (
+const InternshipPrograms = () => (
   <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
     {/* Hero Section */}
     <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
@@ -67,45 +67,47 @@ const CorporatePartnerProgram = () => (
             </div>
 
             {/* MERN Stack Training Card */}
-            <div className="relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
-              <div className="absolute inset-0 bg-cover bg-center z-0 group-hover:scale-110 transition-transform duration-500" 
-                style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80')`,
-                }}>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-blue-900/70 z-10"></div>
-              <div className="relative z-20">
-                <div className="w-16 h-16 bg-white/10 backdrop-blur rounded-full flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                  </svg>
+            <Link to="/mern-projects" className="block">
+              <div className="relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
+                <div className="absolute inset-0 bg-cover bg-center z-0 group-hover:scale-110 transition-transform duration-500" 
+                  style={{
+                    backgroundImage: `url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80')`,
+                  }}>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">MERN Stack Development</h3>
-                <p className="text-gray-100 mb-4">
-                  Build full-stack web applications using the powerful MERN stack technology suite.
-                </p>
-                <ul className="text-gray-100 space-y-2">
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-blue-900/70 z-10"></div>
+                <div className="relative z-20">
+                  <div className="w-16 h-16 bg-white/10 backdrop-blur rounded-full flex items-center justify-center mb-6">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
-                    MongoDB & Express.js
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                    React.js & Node.js
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                    Full Stack Project Development
-                  </li>
-                </ul>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white">MERN Stack Development</h3>
+                  <p className="text-gray-100 mb-4">
+                    Build full-stack web applications using the powerful MERN stack technology suite.
+                  </p>
+                  <ul className="text-gray-100 space-y-2">
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      MongoDB & Express.js
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                      React.js & Node.js
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                      Full Stack Project Development
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           {/* Program Benefits */}
@@ -160,4 +162,4 @@ const CorporatePartnerProgram = () => (
   </div>
 );
 
-export default CorporatePartnerProgram; 
+export default InternshipPrograms; 
