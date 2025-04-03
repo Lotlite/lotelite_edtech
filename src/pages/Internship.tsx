@@ -152,7 +152,7 @@ const Internship = () => {
 
           <div className="text-center">
             <Link
-              to="/mernprojects"
+              to="/mern-projects"
               className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
             >
               Explore More
