@@ -7,8 +7,8 @@ const InternshipPrograms = () => (
     <div className="bg-gradient-to-r from-blue-900 via-indigo-800 to-blue-900 text-white py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGZpbGw9IiMyNTU5QjQiIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iNzIwIiBjeT0iNjAiIHI9IjYwIi8+PGNpcmNsZSBmaWxsPSIjMjU1OUI0IiBmaWxsLW9wYWNpdHk9Ii4wNSIgY3g9IjcyMCIgY3k9IjYwIiByPSI0NSIvPjxjaXJjbGUgZmlsbD0iIzI1NTlCNCIgZmlsbC1vcGFjaXR5PSIuMDUiIGN4PSI3MjAiIGN5PSI2MCIgcj0iMzAiLz48Y2lyY2xlIGZpbGw9IiMyNTU5QjQiIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iNzIwIiBjeT0iNjAiIHI9IjE1Ii8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <h1 className="text-5xl font-bold mb-4">Internship Programs</h1>
-        <p className="text-xl text-blue-100 max-w-2xl">
+        <h1 className="text-5xl font-bold mb-4 animate-fade-in">Internship Programs</h1>
+        <p className="text-xl text-blue-100 max-w-2xl animate-fade-in-delay">
           Empowering your workforce with cutting-edge technical skills through our specialized training programs
         </p>
       </div>
@@ -27,7 +27,7 @@ const InternshipPrograms = () => (
 
           <div className="grid md:grid-cols-4 gap-4 mb-10">
             {/* YouTube Clone Project Card */}
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 group">
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 group hover:-translate-y-1">
               <div className="relative h-32">
                 <img 
                   src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3" 
@@ -35,6 +35,7 @@ const InternshipPrograms = () => (
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent"></div>
+                <div className="absolute top-2 right-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-full">Popular</div>
               </div>
               <div className="p-3">
                 <h3 className="text-base font-semibold mb-1 text-blue-900">Learn To Build a Real Time Website Like YouTube</h3>
@@ -57,7 +58,7 @@ const InternshipPrograms = () => (
             </div>
 
             {/* Stack Overflow Clone Project Card */}
-            <div className="bg-gradient-to-br from-white to-indigo-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-indigo-100 group">
+            <div className="bg-gradient-to-br from-white to-indigo-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-indigo-100 group hover:-translate-y-1">
               <div className="relative h-32">
                 <img 
                   src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3" 
@@ -65,6 +66,7 @@ const InternshipPrograms = () => (
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/90 to-transparent"></div>
+                <div className="absolute top-2 right-2 bg-indigo-900 text-white text-xs px-2 py-1 rounded-full">Featured</div>
               </div>
               <div className="p-3">
                 <h3 className="text-base font-semibold mb-1 text-indigo-900">Learn To Build a Real Time Website Like Stack Overflow</h3>
@@ -87,7 +89,7 @@ const InternshipPrograms = () => (
             </div>
 
             {/* E-commerce Project Card */}
-            <div className="bg-gradient-to-br from-white to-purple-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100 group">
+            <div className="bg-gradient-to-br from-white to-purple-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100 group hover:-translate-y-1">
               <div className="relative h-32">
                 <img 
                   src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3" 
@@ -95,6 +97,7 @@ const InternshipPrograms = () => (
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 to-transparent"></div>
+                <div className="absolute top-2 right-2 bg-purple-900 text-white text-xs px-2 py-1 rounded-full">New</div>
               </div>
               <div className="p-3">
                 <h3 className="text-base font-semibold mb-1 text-purple-900">Build a Full-Stack E-commerce Platform</h3>
@@ -117,7 +120,7 @@ const InternshipPrograms = () => (
             </div>
 
             {/* Social Media Dashboard Card */}
-            <div className="bg-gradient-to-br from-white to-teal-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-teal-100 group">
+            <div className="bg-gradient-to-br from-white to-teal-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-teal-100 group hover:-translate-y-1">
               <div className="relative h-32">
                 <img 
                   src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3" 
@@ -125,6 +128,7 @@ const InternshipPrograms = () => (
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-900/90 to-transparent"></div>
+                <div className="absolute top-2 right-2 bg-teal-900 text-white text-xs px-2 py-1 rounded-full">Trending</div>
               </div>
               <div className="p-3">
                 <h3 className="text-base font-semibold mb-1 text-teal-900">Create a Social Media Analytics Dashboard</h3>
@@ -148,19 +152,20 @@ const InternshipPrograms = () => (
           </div>
 
           <div className="flex justify-center mb-10">
-            <Link to="/mern-projects" className="inline-block bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-800 hover:to-indigo-800 transform hover:-translate-y-1 transition-all shadow-lg">
+            <Link to="/mern-projects" className="inline-block bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-800 hover:to-indigo-800 transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-xl">
               Explore More
             </Link>
           </div>
 
           {/* Program Benefits */}
-          <div className="py-12 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl px-6 mb-12 shadow-inner">
-            <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">
+          <div className="py-12 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl px-6 mb-12 shadow-inner relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGZpbGw9IiMyNTU5QjQiIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iNzIwIiBjeT0iNjAiIHI9IjYwIi8+PGNpcmNsZSBmaWxsPSIjMjU1OUI0IiBmaWxsLW9wYWNpdHk9Ii4wNSIgY3g9IjcyMCIgY3k9IjYwIiByPSI0NSIvPjxjaXJjbGUgZmlsbD0iIzI1NTlCNCIgZmlsbC1vcGFjaXR5PSIuMDUiIGN4PSI3MjAiIGN5PSI2MCIgcj0iMzAiLz48Y2lyY2xlIGZpbGw9IiMyNTU5QjQiIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iNzIwIiBjeT0iNjAiIHI9IjE1Ii8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+            <h2 className="text-2xl font-bold text-center mb-8 text-gray-900 relative z-10">
               Why Choose Our Internship Programs?
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-4">
+            <div className="grid md:grid-cols-3 gap-6 relative z-10">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -168,8 +173,8 @@ const InternshipPrograms = () => (
                 <h3 className="text-lg font-bold mb-2 text-blue-900">Industry Experts</h3>
                 <p className="text-gray-700 text-sm">Learn from experienced professionals with real-world expertise</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-4">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                   </svg>
@@ -177,8 +182,8 @@ const InternshipPrograms = () => (
                 <h3 className="text-lg font-bold mb-2 text-blue-900">Practical Projects</h3>
                 <p className="text-gray-700 text-sm">Hands-on experience with real-world projects and case studies</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-4">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -190,13 +195,14 @@ const InternshipPrograms = () => (
           </div>
 
           {/* What you will get Section */}
-          <div className="py-12 bg-white rounded-2xl px-6 mb-12 shadow-sm border border-gray-100">
-            <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">
+          <div className="py-12 bg-white rounded-2xl px-6 mb-12 shadow-sm border border-gray-100 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGZpbGw9IiMyNTU5QjQiIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iNzIwIiBjeT0iNjAiIHI9IjYwIi8+PGNpcmNsZSBmaWxsPSIjMjU1OUI0IiBmaWxsLW9wYWNpdHk9Ii4wNSIgY3g9IjcyMCIgY3k9IjYwIiByPSI0NSIvPjxjaXJjbGUgZmlsbD0iIzI1NTlCNCIgZmlsbC1vcGFjaXR5PSIuMDUiIGN4PSI3MjAiIGN5PSI2MCIgcj0iMzAiLz48Y2lyY2xlIGZpbGw9IiMyNTU5QjQiIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iNzIwIiBjeT0iNjAiIHI9IjE1Ii8+PC9nPjwvc3ZnPg==')] opacity-5"></div>
+            <h2 className="text-2xl font-bold text-center mb-8 text-gray-900 relative z-10">
               What You Will Get Through Our Internship Programs
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-5 hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-3">
+            <div className="grid md:grid-cols-2 gap-6 relative z-10">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-5 hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200 group">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
                   </svg>
@@ -205,8 +211,8 @@ const InternshipPrograms = () => (
                 <p className="text-gray-700 text-sm">Work on real-world projects that mirror industry standards and practices.</p>
               </div>
 
-              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-5 hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-indigo-200">
-                <div className="w-10 h-10 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-lg flex items-center justify-center mb-3">
+              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-5 hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-indigo-200 group">
+                <div className="w-10 h-10 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-5 h-5 text-indigo-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
@@ -215,8 +221,8 @@ const InternshipPrograms = () => (
                 <p className="text-gray-700 text-sm">Receive an industry-recognized certification upon completion.</p>
               </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-5 hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-3">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-5 hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-200 group">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
@@ -225,8 +231,8 @@ const InternshipPrograms = () => (
                 <p className="text-gray-700 text-sm">Get personalized guidance from industry experts.</p>
               </div>
 
-              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-5 hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-indigo-200">
-                <div className="w-10 h-10 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-lg flex items-center justify-center mb-3">
+              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-5 hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-indigo-200 group">
+                <div className="w-10 h-10 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-5 h-5 text-indigo-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
@@ -238,12 +244,13 @@ const InternshipPrograms = () => (
           </div>
 
           {/* Testimonials Section */}
-          <div className="py-12 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl px-6 mb-12 shadow-inner">
-            <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">
+          <div className="py-12 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl px-6 mb-12 shadow-inner relative overflow-hidden">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGZpbGw9IiMyNTU5QjQiIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iNzIwIiBjeT0iNjAiIHI9IjYwIi8+PGNpcmNsZSBmaWxsPSIjMjU1OUI0IiBmaWxsLW9wYWNpdHk9Ii4wNSIgY3g9IjcyMCIgY3k9IjYwIiByPSI0NSIvPjxjaXJjbGUgZmlsbD0iIzI1NTlCNCIgZmlsbC1vcGFjaXR5PSIuMDUiIGN4PSI3MjAiIGN5PSI2MCIgcj0iMzAiLz48Y2lyY2xlIGZpbGw9IiMyNTU5QjQiIGZpbGwtb3BhY2l0eT0iLjA1IiBjeD0iNzIwIiBjeT0iNjAiIHI9IjE1Ii8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+            <h2 className="text-2xl font-bold text-center mb-8 text-gray-900 relative z-10">
               What Our Students Say
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100">
+            <div className="grid md:grid-cols-3 gap-6 relative z-10">
+              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100 group">
                 <div className="mb-4">
                   <div className="flex mb-2">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -267,7 +274,7 @@ const InternshipPrograms = () => (
                 </div>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100">
+              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100 group">
                 <div className="mb-4">
                   <div className="flex mb-2">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -291,7 +298,7 @@ const InternshipPrograms = () => (
                 </div>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100">
+              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100 group">
                 <div className="mb-4">
                   <div className="flex mb-2">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -325,7 +332,7 @@ const InternshipPrograms = () => (
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
                 Contact us to learn more about our training programs and how they can benefit your organization
               </p>
-              <Link to="/contact-us" className="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transform hover:-translate-y-1 transition-all shadow-lg">
+              <Link to="/contact-us" className="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transform hover:-translate-y-1 transition-all shadow-lg hover:shadow-xl">
                 Get Started
               </Link>
             </div>
