@@ -13,7 +13,7 @@ import ForeignDegreePrograms from './pages/ForeignDegreePrograms';
 import Contact from './pages/ContactUs';
 import Career from './pages/Career';
 import UniversityPartnerProgram from './pages/UniversityPartnerProgram';
-import ITServices from './pages/ITServices';
+import ITServices from './pages/Itprojects';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import AboutUs from './pages/AboutUs';

@@ -250,7 +250,7 @@ const InternshipPrograms = () => (
               What Our Students Say
             </h2>
             <div className="grid md:grid-cols-3 gap-6 relative z-10">
-              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100 group">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100 group">
                 <div className="mb-4">
                   <div className="flex mb-2">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -259,22 +259,22 @@ const InternshipPrograms = () => (
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-600 text-sm italic">"The internship program was a game-changer for my career. The hands-on experience and mentorship helped me land my dream job."</p>
+                  <p className="text-gray-700 text-sm italic">"The internship program was a game-changer for my career. The hands-on experience and mentorship helped me land my dream job."</p>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full flex items-center justify-center mr-3">
                     <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm">Rahul Sharma</h4>
-                    <p className="text-xs text-gray-500">Software Engineer at Google</p>
+                    <h4 className="font-semibold text-sm text-blue-900">Rahul Sharma</h4>
+                    <p className="text-xs text-gray-600">Software Engineer at Google</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100 group">
+              <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-indigo-100 group">
                 <div className="mb-4">
                   <div className="flex mb-2">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -283,22 +283,22 @@ const InternshipPrograms = () => (
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-600 text-sm italic">"The project-based learning approach gave me practical experience that was invaluable during my job interviews."</p>
+                  <p className="text-gray-700 text-sm italic">"The project-based learning approach gave me practical experience that was invaluable during my job interviews."</p>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mr-3">
-                    <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-5 h-5 text-indigo-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm">Priya Patel</h4>
-                    <p className="text-xs text-gray-500">Full Stack Developer at Microsoft</p>
+                    <h4 className="font-semibold text-sm text-indigo-900">Priya Patel</h4>
+                    <p className="text-xs text-gray-600">Full Stack Developer at Microsoft</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-100 group">
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-purple-100 group">
                 <div className="mb-4">
                   <div className="flex mb-2">
                     {[1, 2, 3, 4, 5].map((star) => (
@@ -307,17 +307,17 @@ const InternshipPrograms = () => (
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-600 text-sm italic">"The quality of training and real-world projects helped me transition from a fresher to a confident developer."</p>
+                  <p className="text-gray-700 text-sm italic">"The quality of training and real-world projects helped me transition from a fresher to a confident developer."</p>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mr-3">
-                    <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-gradient-to-br from-purple-200 to-purple-300 rounded-full flex items-center justify-center mr-3">
+                    <svg className="w-5 h-5 text-purple-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm">Arun Kumar</h4>
-                    <p className="text-xs text-gray-500">Backend Engineer at Amazon</p>
+                    <h4 className="font-semibold text-sm text-purple-900">Arun Kumar</h4>
+                    <p className="text-xs text-gray-600">Backend Engineer at Amazon</p>
                   </div>
                 </div>
               </div>
