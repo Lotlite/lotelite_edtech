@@ -268,8 +268,7 @@ const InternshipPrograms = () => (
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-blue-900">Rahul Sharma</h4>
-                    <p className="text-xs text-gray-600">Software Engineer at Google</p>
+                    <h4 className="font-semibold text-sm text-blue-900">Aayush kumar</h4>
                   </div>
                 </div>
               </div>
@@ -292,8 +291,7 @@ const InternshipPrograms = () => (
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-indigo-900">Priya Patel</h4>
-                    <p className="text-xs text-gray-600">Full Stack Developer at Microsoft</p>
+                    <h4 className="font-semibold text-sm text-indigo-900">komal kumari</h4>
                   </div>
                 </div>
               </div>
@@ -316,8 +314,7 @@ const InternshipPrograms = () => (
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-purple-900">Arun Kumar</h4>
-                    <p className="text-xs text-gray-600">Backend Engineer at Amazon</p>
+                    <h4 className="font-semibold text-sm text-purple-900">yash kumar</h4>
                   </div>
                 </div>
               </div>
