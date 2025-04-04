@@ -39,7 +39,7 @@ const Internship = () => {
   return (
     <div className="min-h-screen bg-gray-50">
     {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+    <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
       <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
@@ -113,7 +113,7 @@ const Internship = () => {
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">React</span>
                   <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Express</span>
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">MongoDB</span>
-                </div>
+              </div>
             </div>
           </div>
 
@@ -421,7 +421,7 @@ const Internship = () => {
                   <p className="text-gray-700 text-sm">Earn a recognized certification upon completion.</p>
                 </div>
               </div>
-            </div>
+                  </div>
 
             {/* Navigation Buttons for Cards Carousel */}
             <button 
@@ -519,7 +519,7 @@ const Internship = () => {
       </div>
 
       {/* Call to Action Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
+      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Tech Journey?</h2>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
