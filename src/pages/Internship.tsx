@@ -38,9 +38,9 @@ const Internship = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
-        <div className="container mx-auto px-4">
+    {/* Hero Section */}
+      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+      <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
               Launch Your Tech Career with Our Internship Programs
@@ -49,22 +49,22 @@ const Internship = () => {
               Gain real-world experience, build your portfolio, and kickstart your journey in tech
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
-              <Link
+                  <Link 
                 to="/internship/enroll"
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
-              >
-                Enroll Now
-              </Link>
-              <Link
+                  >
+                    Enroll Now
+                  </Link>
+                  <Link 
                 to="/internship/programs"
                 className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors duration-300"
               >
                 View Programs
-              </Link>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
       {/* Explore Our Internship Section */}
       <div className="py-16 bg-white">
@@ -79,10 +79,12 @@ const Internship = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             {/* Project Card 1 */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="h-48 bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                </svg>
+              <div className="h-48 bg-cover bg-center flex items-center justify-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')" }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/70 to-indigo-700/70 flex items-center justify-center">
+                  <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">E-Commerce Platform</h3>
@@ -97,10 +99,12 @@ const Internship = () => {
 
             {/* Project Card 2 */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="h-48 bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+              <div className="h-48 bg-cover bg-center flex items-center justify-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')" }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/70 to-pink-700/70 flex items-center justify-center">
+                  <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Task Management App</h3>
@@ -110,15 +114,17 @@ const Internship = () => {
                   <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Express</span>
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">MongoDB</span>
                 </div>
-              </div>
             </div>
+          </div>
 
             {/* Project Card 3 */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="h-48 bg-gradient-to-r from-red-400 to-orange-500 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                </svg>
+              <div className="h-48 bg-cover bg-center flex items-center justify-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')" }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-red-600/70 to-orange-700/70 flex items-center justify-center">
+                  <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Blog Platform</h3>
@@ -129,14 +135,16 @@ const Internship = () => {
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">MongoDB</span>
                 </div>
               </div>
-            </div>
+              </div>
 
             {/* Project Card 4 */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-              <div className="h-48 bg-gradient-to-r from-teal-400 to-cyan-500 flex items-center justify-center">
-                <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+              <div className="h-48 bg-cover bg-center flex items-center justify-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')" }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-600/70 to-cyan-700/70 flex items-center justify-center">
+                  <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Social Media Dashboard</h3>
@@ -150,7 +158,7 @@ const Internship = () => {
             </div>
           </div>
 
-          <div className="text-center">
+              <div className="text-center">
             <Link
               to="/mern-projects"
               className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
@@ -207,7 +215,7 @@ const Internship = () => {
                       <li className="flex items-start">
                         <svg className="w-5 h-5 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
+                  </svg>
                         <span className="text-gray-700">Implement industry best practices</span>
                       </li>
                     </ul>
@@ -251,7 +259,7 @@ const Internship = () => {
                       <li className="flex items-start">
                         <svg className="w-5 h-5 text-indigo-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
+                  </svg>
                         <span className="text-gray-700">Career guidance and advice</span>
                       </li>
                     </ul>
@@ -295,7 +303,7 @@ const Internship = () => {
                       <li className="flex items-start">
                         <svg className="w-5 h-5 text-purple-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
+                  </svg>
                         <span className="text-gray-700">Resume building workshops</span>
                       </li>
                     </ul>
@@ -343,7 +351,7 @@ const Internship = () => {
             </div>
           </div>
         </div>
-      </div>
+                </div>
 
       {/* What You Will Get Through Our Internship Programs Section */}
       <div className="py-16 bg-gray-50">
@@ -353,7 +361,7 @@ const Internship = () => {
             <p className="text-gray-600 max-w-2xl mx-auto">
               Our internship programs provide you with everything you need to succeed in your tech career.
             </p>
-          </div>
+                </div>
 
           {/* Program Cards Carousel */}
           <div className="relative max-w-6xl mx-auto overflow-hidden">
@@ -381,8 +389,8 @@ const Internship = () => {
                   <div className="w-10 h-10 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-5 h-5 text-indigo-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
+                  </svg>
+                </div>
                   <h3 className="text-lg font-bold mb-2 text-indigo-900">Mentorship Support</h3>
                   <p className="text-gray-700 text-sm">Get personalized guidance from industry experts.</p>
                 </div>
@@ -446,10 +454,10 @@ const Internship = () => {
                   onClick={() => goToCardSlide(index)}
                 />
               ))}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
       {/* What Our Students Say Section */}
       <div className="py-16 bg-white">
@@ -523,10 +531,10 @@ const Internship = () => {
           >
             Enroll Now
           </Link>
-        </div>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default Internship; 
