@@ -56,7 +56,7 @@ const UniversityPartnerProgram = () => {
     'Skyline University Sharjah': '/mous/Skyline university college.pdf',
     'University of Toronto': '/mous/University of Toronto.pdf',
     'MIT World Peace University': '/mous/MIT World Peace University.pdf',
-    'MIT Loni': '/mous/Mit Loni kalbhor.pdf',
+    'MIT ADT University': '/mous/Mit Loni kalbhor.pdf',
     'Raffles University': '/mous/Raffles University.pdf',
     'Chandigarh University': '/mous/Chandigarh University.pdf',
     'PVG COET University': '/mous/PVG\'s Coet & GKPIM.pdf'
@@ -176,7 +176,9 @@ const UniversityPartnerProgram = () => {
               <div key={name} className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="aspect-w-16 aspect-h-9 overflow-hidden">
                   <img 
-                    src={`/src/images/universities/${name.toLowerCase().replace(/\s+/g, '-')}.jpg`}
+                    src={name === 'Raffles University' 
+                      ? '/raffle-uni.jpeg' 
+                      : `/src/images/universities/${name.toLowerCase().replace(/\s+/g, '-')}.jpg`}
                     alt={name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
