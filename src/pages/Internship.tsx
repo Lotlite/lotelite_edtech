@@ -39,7 +39,7 @@ const Internship = () => {
   return (
     <div className="min-h-screen bg-gray-50">
     {/* Hero Section */}
-    <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
       <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
@@ -477,7 +477,7 @@ const Internship = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-blue-900">Rahul Sharma</h3>
-                  <p className="text-gray-700">Frontend Developer at Google</p>
+                  
                 </div>
               </div>
               <p className="text-gray-700">
@@ -492,7 +492,7 @@ const Internship = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-indigo-900">Priya Patel</h3>
-                  <p className="text-gray-700">Full Stack Developer at Microsoft</p>
+                  
                 </div>
               </div>
               <p className="text-gray-700">
@@ -507,7 +507,7 @@ const Internship = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-purple-900">Arun Kumar</h3>
-                  <p className="text-gray-700">Backend Developer at Amazon</p>
+                  
                 </div>
               </div>
               <p className="text-gray-700">
@@ -519,7 +519,7 @@ const Internship = () => {
       </div>
 
       {/* Call to Action Section */}
-      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
+      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Tech Journey?</h2>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">

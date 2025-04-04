@@ -114,9 +114,8 @@ const UniversityPartnerProgram = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section - Modern Design */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-blue-900 to-indigo-900">
-        <div className="absolute inset-0 bg-[url('/src/images/pattern.svg')] opacity-10"></div>
-        <div className="container mx-auto px-4 py-24 relative">
+      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
               Global Education
@@ -132,9 +131,9 @@ const UniversityPartnerProgram = () => {
               <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-all">
                 Learn More
               </button>
-        </div>
-      </div>
             </div>
+          </div>
+        </div>
 
         {/* Stats Banner */}
         <div className="bg-white/10 backdrop-blur-sm border-t border-white/20">
