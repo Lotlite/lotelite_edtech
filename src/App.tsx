@@ -19,6 +19,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import AboutUs from './pages/AboutUs';
 import InternshipPrograms from './pages/Internship';
 import MernProjects from './pages/MernProjects';
+import PlacementGuaranteeProgram from './pages/Placementgauranteeprogram';
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
             <Route path="/enroll/:projectId" element={<MernProjects />} />
             <Route path="/demo/:projectId" element={<MernProjects />} />
             <Route path="/it-project" element={<ITServices />} />
+            <Route path="/placement-guarantee-program" element={<PlacementGuaranteeProgram />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/career" element={<Career />} />
             <Route path="/about-us" element={<AboutUs />} />

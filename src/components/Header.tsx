@@ -39,6 +39,9 @@ const Header = () => {
             <Link to="/university-partner-program" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
               University Partner Program
             </Link>
+            <Link to="/placement-guarantee-program" className="text-gray-700 hover:text-[#0077B5] font-medium text-sm transition-colors duration-200">
+              Placement Guarantee Program
+            </Link>
           </nav>
           
           <div className="hidden lg:flex items-center space-x-3">
@@ -79,6 +82,9 @@ const Header = () => {
               </Link>
               <Link to="/university-partner-program" className="block py-2 text-gray-700 font-medium hover:text-[#0077B5] transition-colors duration-200 text-sm">
                 University Partner Program
+              </Link>
+              <Link to="/placement-guarantee-program" className="block py-2 text-gray-700 font-medium hover:text-[#0077B5] transition-colors duration-200 text-sm">
+                Placement Guarantee Program
               </Link>
               <div className="flex flex-col space-y-2 pt-3 border-t">
                 <Link to="/career" className="w-full px-4 py-2 text-[#0077B5] font-medium border-2 border-[#0077B5] rounded-md hover:bg-[#0077B5] hover:text-white transition-all duration-200 text-center text-sm">
