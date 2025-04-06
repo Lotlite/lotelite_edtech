@@ -408,9 +408,12 @@ const PlacementGuaranteeProgram = () => {
 
       {/* CTA Section */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg animate-slide-up">
-        <button className="w-full bg-gradient-to-r from-blue-900 to-indigo-900 hover:from-blue-800 hover:to-indigo-800 text-white py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-[1.02]">
+        <Link 
+          to="/contact-us"
+          className="block w-full bg-gradient-to-r from-blue-900 to-indigo-900 hover:from-blue-800 hover:to-indigo-800 text-white py-4 rounded-xl font-semibold text-lg text-center transition-all duration-300 transform hover:scale-[1.02]"
+        >
           Secure Your Future Now
-        </button>
+        </Link>
         <div className="mt-3 flex items-center justify-between text-sm text-gray-600">
           <p className="flex items-center">
             <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
