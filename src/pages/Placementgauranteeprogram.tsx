@@ -22,7 +22,6 @@ const PlacementGuaranteeProgram = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="sticky top-0 bg-white/80 backdrop-blur-md z-50 px-4 py-3 border-b">
-        <h1 className="text-xl font-semibold text-gray-900">Placement Guarantee</h1>
       </div>
 
       {/* Hero Section */}
