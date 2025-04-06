@@ -301,7 +301,7 @@ const PlacementGuaranteeProgram = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="font-semibold text-gray-900 text-lg">Rahul Sharma</h3>
-                    <p className="text-purple-600 font-medium">Full Stack Developer @ Microsoft</p>
+                    <p className="text-purple-600 font-medium">Full Stack Developer </p>
                   </div>
                 </div>
                 
@@ -348,7 +348,7 @@ const PlacementGuaranteeProgram = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="font-semibold text-gray-900 text-lg">Priya Patel</h3>
-                    <p className="text-green-600 font-medium">Backend Engineer @ Amazon</p>
+                    <p className="text-green-600 font-medium">Backend Engineer</p>
                   </div>
                 </div>
                 
