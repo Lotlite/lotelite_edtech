@@ -21,42 +21,32 @@ const PlacementGuaranteeProgram = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="sticky top-0 bg-white/80 backdrop-blur-md z-50 px-4 py-3 flex items-center justify-between border-b">
-        <div className="flex items-center">
-          <Link to="/" className="p-2 hover:bg-gray-100 rounded-full transition-colors">
-            <ArrowLeft className="h-6 w-6 text-gray-900" />
-          </Link>
-          <h1 className="text-xl font-semibold text-gray-900 ml-2">Placement Guarantee</h1>
-        </div>
-        <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
-          <Share2 className="h-6 w-6 text-gray-900" />
-        </button>
+      <div className="sticky top-0 bg-white/80 backdrop-blur-md z-50 px-4 py-3 border-b">
+        <h1 className="text-xl font-semibold text-gray-900">Placement Guarantee</h1>
       </div>
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-              Your Career Success <span className="text-blue-400">Guaranteed</span>
-            </h1>
-            <p className="text-xl mb-8 text-blue-100 animate-fade-in-delay">
-              Join 10,000+ successful graduates in tech
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
-              <Link 
-                to="/contact-us"
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
-              >
-                Enroll Now
-              </Link>
-              <Link 
-                to="/contact-us"
-                className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors duration-300"
-              >
-                View Details
-              </Link>
-            </div>
+        <div className="max-w-3xl mx-auto text-center px-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
+            Your Career Success <span className="text-blue-400">Guaranteed</span>
+          </h1>
+          <p className="text-xl mb-8 text-blue-100 animate-fade-in-delay">
+            Join 10,000+ successful graduates in tech
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
+            <Link 
+              to="/contact-us"
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
+            >
+              Enroll Now
+            </Link>
+            <Link 
+              to="/contact-us"
+              className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors duration-300"
+            >
+              View Details
+            </Link>
           </div>
         </div>
       </div>
