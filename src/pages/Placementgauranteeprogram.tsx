@@ -45,13 +45,13 @@ const PlacementGuaranteeProgram = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
               <Link 
-                to="/placement-guarantee/enroll"
+                to="/contact-us"
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
               >
                 Enroll Now
               </Link>
               <Link 
-                to="/placement-guarantee/programs"
+                to="/contact-us"
                 className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors duration-300"
               >
                 View Details
