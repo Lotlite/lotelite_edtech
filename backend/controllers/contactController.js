@@ -4,15 +4,30 @@ const contactController = {
   // Create new contact
   createContact: async (req, res) => {
     try {
-      const contact = await Contact.create(req.body);
+      const { firstName, lastName, email, phone, message, collegeName, passingYear, courseField } = req.body;
+
+      const contact = await Contact.create({
+        firstName,
+        lastName,
+        email,
+        phone,
+        message,
+        collegeName,
+        passingYear,
+        courseField
+      });
+
       res.status(201).json({
         success: true,
+        message: 'Contact form submitted successfully',
         data: contact
       });
     } catch (error) {
-      res.status(400).json({
+      console.error('Contact creation error:', error);
+      res.status(500).json({
         success: false,
-        message: error.message
+        message: 'Error submitting contact form',
+        error: error.message
       });
     }
   },

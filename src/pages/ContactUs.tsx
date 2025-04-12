@@ -12,7 +12,10 @@ const ContactUs = () => {
     lastName: '',
     email: '',
     phone: '',
-    message: ''
+    message: '',
+    collegeName: '',
+    passingYear: '',
+    courseField: ''
   });
   const [isLoading, setIsLoading] = useState(false);
 
@@ -68,7 +71,10 @@ const ContactUs = () => {
         lastName: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        collegeName: '',
+        passingYear: '',
+        courseField: ''
       });
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to submit the form. Please try again.';
@@ -146,6 +152,52 @@ const ContactUs = () => {
                 onChange={handleChange}
                 required
               />
+            </div>
+            <div>
+              <label htmlFor="collegeName" className="block text-sm font-medium text-gray-700 mb-1">
+                College Name
+              </label>
+              <input
+                type="text"
+                id="collegeName"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0077B5] focus:border-[#0077B5]"
+                placeholder="Your college name"
+                value={formData.collegeName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="passingYear" className="block text-sm font-medium text-gray-700 mb-1">
+                  Passing Year
+                </label>
+                <input
+                  type="number"
+                  id="passingYear"
+                  min="2000"
+                  max="2030"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0077B5] focus:border-[#0077B5]"
+                  placeholder="Year of graduation"
+                  value={formData.passingYear}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="courseField" className="block text-sm font-medium text-gray-700 mb-1">
+                  Course Field
+                </label>
+                <input
+                  type="text"
+                  id="courseField"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0077B5] focus:border-[#0077B5]"
+                  placeholder="Your course field"
+                  value={formData.courseField}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
