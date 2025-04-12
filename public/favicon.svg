@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#0077B5" />
+  
+  <!-- Graduation cap icon -->
+  <path d="M50 20L20 35L50 50L80 35L50 20Z" fill="white" />
+  <path d="M20 35V65L50 80L80 65V35" fill="white" stroke="white" stroke-width="2" />
+  
+  <!-- Text "L" for Lotlite -->
+  <text x="50" y="90" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="white" text-anchor="middle">L</text>
+</svg> 
