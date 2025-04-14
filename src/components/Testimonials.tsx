@@ -5,36 +5,36 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: ' Sarah Johnson',
-      role: 'Data Scientist at Google',
-      image: 't1.jpg',
+      name: ' Aditya Kumbhar ',
+      // role: 'Data Scientist at Google',
+      image: 't1.jpeg',
       content: 'The Data Science program completely transformed my career. I went from being a marketing analyst to a data scientist at Google with a 70% salary increase. The curriculum was challenging but extremely relevant to what employers are looking for.',
       rating: 5,
       program: 'Data Science Certification'
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      role: 'Software Engineer at Amazon',
-      image: 't2.png',
+      name: 'Swar Lende ',
+      // role: 'Software Engineer at Amazon',
+      image: 't2.jpeg',
       content: 'As someone with no prior coding experience, I was amazed at how quickly I was able to build real-world projects. The instructors were incredibly supportive and the career services helped me land my dream job at Amazon.',
       rating: 5,
       program: 'Full-Stack Development Bootcamp'
     },
     {
       id: 3,
-      name: 'Priya patel',
-      role: 'Product Manager at Microsoft',
-      image: 't3.jpg',
+      name: 'Vedant Vasudeo ',
+      // role: 'Product Manager at Microsoft',
+      image: 't3.jpeg',
       content: 'The Product Management certification gave me the strategic framework and tools I needed to transition from engineering to product. The industry projects and mentorship were invaluable in helping me understand the role.',
       rating: 4,
       program: 'Product Management Certification'
     },
     {
       id: 4,
-      name: 'David Wilson',
-      role: 'Marketing Director at Netflix',
-      image: 't4.jpg',
+      name: ' Rugved Joshi ',
+      // role: 'Marketing Director at Netflix',
+      image: 't4.jpeg',
       content: 'The Digital Marketing program provided me with cutting-edge strategies that I was able to implement immediately in my role. The ROI measurement framework alone was worth the investment in the program.',
       rating: 5,
       program: 'Digital Marketing Masters'
@@ -75,7 +75,7 @@ const Testimonials = () => {
                   className="w-24 h-24 rounded-full object-cover mb-4"
                 />
                 <h3 className="text-xl font-semibold text-gray-800 text-center">{testimonials[currentIndex].name}</h3>
-                <p className="text-[#0077B5] font-medium text-center mb-2">{testimonials[currentIndex].role}</p>
+                {/* <p className="text-[#0077B5] font-medium text-center mb-2">{testimonials[currentIndex].role}</p> */}
                 <div className="flex items-center mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star 
