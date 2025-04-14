@@ -20,7 +20,7 @@ const ContactUs = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   // WhatsApp configuration
-  const whatsappNumber = '919876543210'; // International format without the + sign
+  const whatsappNumber = '918805843309'; // International format without the + sign
   const whatsappDefaultMessage = 'Hello, I would like to know more about your services.';
 
   // Generate WhatsApp URL

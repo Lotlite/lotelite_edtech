@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import Carousel from 'react-spring-3d-carousel';
-import CollegeSection from '../components/CollegeSection';
-import Inti from '../../public/Inti.jpg';
-import Inti2 from '../../public/inti.jpg';
-import Inti3 from '../../public/inti3.jpg';
-import Inti4 from '../../public/inti4.jpg';
-import Inti5 from '../../public/inti5.jpg';
-import Inti6 from '../../public/inti6.jpg';
-import Inti7 from '../../public/inti7.jpg';
-import Inti8 from '../../public/inti8.jpg';
-import Inti9 from '../../public/inti9.jpg';
+// import Carousel from 'react-spring-3d-carousel';
+// import CollegeSection from '../components/CollegeSection';
+// import Inti from '../../public/Inti.jpg';
+// import Inti2 from '../../public/inti.jpg';
+// import Inti3 from '../../public/inti3.jpg';
+// import Inti4 from '../../public/inti4.jpg';
+// import Inti5 from '../../public/inti5.jpg';
+// import Inti6 from '../../public/inti6.jpg';
+// import Inti7 from '../../public/inti7.jpg';
+// import Inti8 from '../../public/inti8.jpg';
+// import Inti9 from '../../public/inti9.jpg';
 
 
 
