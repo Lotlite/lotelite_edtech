@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from 'react-spring-3d-carousel';
 import CollegeSection from '../components/CollegeSection';
@@ -6,6 +6,21 @@ import Inti from '../../public/Inti.jpg';
 
 const UniversityPartnerProgram = () => {
   const [goToSlide, setGoToSlide] = useState(0);
+  const [counters, setCounters] = useState({
+    partners: 0,
+    students: 0,
+    countries: 0,
+    programs: 0
+  });
+  const statsRef = useRef(null);
+  
+  // Target values for counters
+  const targetCounters = {
+    partners: 50,
+    students: 20,
+    countries: 25,
+    programs: 100
+  };
 
   // MOU URLs mapping
   const mouUrls: { [key: string]: string } = {
@@ -25,6 +40,39 @@ const UniversityPartnerProgram = () => {
     }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(timer);
+  }, []);
+
+  // Animated counter effect for stats
+  useEffect(() => {
+    // Start the counter animation after a short delay when page loads
+    const timer = setTimeout(() => {
+      const duration = 500; // 0.5 seconds for the animation (much faster)
+      const interval = 10; // Update every 10ms
+      const steps = duration / interval;
+      let step = 0;
+      
+      const counterInterval = setInterval(() => {
+        step += 1;
+        const progress = Math.min(step / steps, 1);
+        
+        setCounters({
+          partners: Math.floor(progress * targetCounters.partners),
+          students: Math.floor(progress * targetCounters.students),
+          countries: Math.floor(progress * targetCounters.countries),
+          programs: Math.floor(progress * targetCounters.programs)
+        });
+        
+        if (step >= steps) {
+          clearInterval(counterInterval);
+          // Ensure final values are exact
+          setCounters(targetCounters);
+        }
+      }, interval);
+      
+      return () => clearInterval(counterInterval);
+    }, 100); // Start almost immediately (100ms delay)
+
+    return () => clearTimeout(timer);
   }, []);
 
   const slides = [
@@ -90,21 +138,21 @@ const UniversityPartnerProgram = () => {
         {/* Stats Banner */}
         <div className="bg-white/10 backdrop-blur-sm border-t border-white/20">
           <div className="container mx-auto px-4 py-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8" ref={statsRef}>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">50+</div>
+                <div className="text-4xl font-bold text-white mb-2">{counters.partners}+</div>
                 <div className="text-blue-200">Partner Universities</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">20k+</div>
+                <div className="text-4xl font-bold text-white mb-2">{counters.students}k+</div>
                 <div className="text-blue-200">Students Impacted</div>
                 </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">25+</div>
+                <div className="text-4xl font-bold text-white mb-2">{counters.countries}+</div>
                 <div className="text-blue-200">Countries</div>
                 </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">100+</div>
+                <div className="text-4xl font-bold text-white mb-2">{counters.programs}+</div>
                 <div className="text-blue-200">Programs</div>
               </div>
             </div>
