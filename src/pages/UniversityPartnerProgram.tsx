@@ -126,17 +126,30 @@ const UniversityPartnerProgram = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {Object.entries(mouUrls).slice(0, 6).map(([name, url]) => (
               <div key={name} className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-300">
-                <div className="aspect-w-16 aspect-h-9 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
                   <img 
                     src={name === 'Raffles University' 
                       ? '/raffle-uni.jpeg' 
+                      : name === 'MIT World Peace University'
+                      ? '/mit.jpeg'
                       : `/src/images/universities/${name.toLowerCase().replace(/\s+/g, '-')}.jpg`}
                     alt={name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{name}</h3>
+                  <a 
+                    href={url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    View MOU
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             ))}
