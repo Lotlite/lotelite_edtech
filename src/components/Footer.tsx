@@ -56,6 +56,7 @@ const Footer = () => {
               <li><button onClick={() => handleLinkClick('/maang-certificates')} className="text-gray-400 hover:text-white transition-colors">Certificates</button></li>
               <li><button onClick={() => handleLinkClick('/about-us')} className="text-gray-400 hover:text-white transition-colors">About Us</button></li>
               <li><button onClick={() => handleLinkClick('/contact-us')} className="text-gray-400 hover:text-white transition-colors">Contact Us</button></li>
+              <li><button onClick={() => handleLinkClick('/privacy-policy')} className="text-gray-400 hover:text-white transition-colors">Privacy Policy</button></li>
             </ul>
           </div>
           
