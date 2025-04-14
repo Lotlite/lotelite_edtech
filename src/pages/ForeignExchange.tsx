@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const ForeignExchange = () => (
   <div className="min-h-screen bg-white">
@@ -93,12 +94,12 @@ const ForeignExchange = () => (
 
       {/* CTA */}
       <div className="text-center mt-16">
-        <Link 
+        <ScrollToTopButton 
           to="/contact-us" 
           className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
         >
           Apply Now
-        </Link>
+        </ScrollToTopButton>
       </div>
     </div>
   </div>

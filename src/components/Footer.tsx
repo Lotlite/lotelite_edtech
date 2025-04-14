@@ -1,9 +1,16 @@
 import React from 'react';
 import Logo from './Logo';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleLinkClick = (to: string) => {
+    navigate(to);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -32,40 +39,40 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Programs</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Data Science</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Software Development</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Foriegn Deegree </a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Foriegn Exchange Programs</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Product Management</a></li>
+              <li><button onClick={() => handleLinkClick('/it-project')} className="text-gray-400 hover:text-white transition-colors">Data Science</button></li>
+              <li><button onClick={() => handleLinkClick('/mern-projects')} className="text-gray-400 hover:text-white transition-colors">Software Development</button></li>
+              <li><button onClick={() => handleLinkClick('/internship-program')} className="text-gray-400 hover:text-white transition-colors">Digital Marketing</button></li>
+              <li><button onClick={() => handleLinkClick('/foreign-degree-programs')} className="text-gray-400 hover:text-white transition-colors">Foreign Degree</button></li>
+              <li><button onClick={() => handleLinkClick('/foreign-exchange')} className="text-gray-400 hover:text-white transition-colors">Foreign Exchange Programs</button></li>
+              <li><button onClick={() => handleLinkClick('/placement-guarantee-program')} className="text-gray-400 hover:text-white transition-colors">Placement Guarantee Program</button></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><Link to="/career" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Partners</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Press</a></li>
-              <li><Link to="/contact-us" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
+              <li><button onClick={() => handleLinkClick('/career')} className="text-gray-400 hover:text-white transition-colors">Careers</button></li>
+              <li><button onClick={() => handleLinkClick('/university-partner-program')} className="text-gray-400 hover:text-white transition-colors">Partners</button></li>
+              <li><button onClick={() => handleLinkClick('/maang-certificates')} className="text-gray-400 hover:text-white transition-colors">Certificates</button></li>
+              <li><button onClick={() => handleLinkClick('/about-us')} className="text-gray-400 hover:text-white transition-colors">About Us</button></li>
+              <li><button onClick={() => handleLinkClick('/contact-us')} className="text-gray-400 hover:text-white transition-colors">Contact Us</button></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Student Success</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Career Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Scholarships</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Events</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Webinars</a></li>
+              <li><button onClick={() => handleLinkClick('/internship-program')} className="text-gray-400 hover:text-white transition-colors">Internship Programs</button></li>
+              <li><button onClick={() => handleLinkClick('/placement-guarantee-program')} className="text-gray-400 hover:text-white transition-colors">Career Services</button></li>
+              <li><button onClick={() => handleLinkClick('/university-partner-program')} className="text-gray-400 hover:text-white transition-colors">University Partners</button></li>
+              <li><button onClick={() => handleLinkClick('/foreign-exchange')} className="text-gray-400 hover:text-white transition-colors">Student Exchange</button></li>
+              <li><button onClick={() => handleLinkClick('/maang-certificates')} className="text-gray-400 hover:text-white transition-colors">MAANG Certificates</button></li>
+              <li><button onClick={() => handleLinkClick('/it-project')} className="text-gray-400 hover:text-white transition-colors">IT Projects</button></li>
             </ul>
           </div>
         </div>
         
-        <div className="pt-8 border-t border-gray-800">
+        <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-gray-400 text-sm">
@@ -93,10 +100,10 @@ const Footer = () => {
           </div>
           
           <div className="mt-4 flex flex-wrap justify-center md:justify-start space-x-4 text-sm text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Accessibility</a>
+            <button onClick={() => handleLinkClick('/privacy-policy')} className="hover:text-white transition-colors">Privacy Policy</button>
+            <button onClick={() => handleLinkClick('/terms')} className="hover:text-white transition-colors">Terms of Service</button>
+            <button onClick={() => handleLinkClick('/cookies')} className="hover:text-white transition-colors">Cookie Policy</button>
+            <button onClick={() => handleLinkClick('/accessibility')} className="hover:text-white transition-colors">Accessibility</button>
           </div>
         </div>
       </div>
