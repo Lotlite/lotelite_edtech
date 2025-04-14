@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const Internship = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -49,18 +50,18 @@ const Internship = () => {
               Gain real-world experience, build your portfolio, and kickstart your journey in tech
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
-                  <Link 
+                  <ScrollToTopButton 
                 to="/mern-projects"
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
                   >
                     Enroll Now
-                  </Link>
-                  <Link 
+                  </ScrollToTopButton>
+                  <ScrollToTopButton 
                 to="/university-partner-program"
                 className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors duration-300"
               >
                 View Programs
-                  </Link>
+                  </ScrollToTopButton>
                 </div>
               </div>
             </div>
@@ -158,13 +159,13 @@ const Internship = () => {
             </div>
           </div>
 
-              <div className="text-center">
-            <Link
+              <div className="text-center mt-10">
+            <ScrollToTopButton
               to="/mern-projects"
               className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
             >
               Explore More
-            </Link>
+            </ScrollToTopButton>
           </div>
         </div>
       </div>
@@ -519,22 +520,22 @@ const Internship = () => {
       </div>
 
       {/* Call to Action Section */}
-      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
+      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Tech Journey?</h2>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
             Join our internship programs and take the first step towards a successful career in tech.
           </p>
-          <Link
+          <ScrollToTopButton
             to="/mern-projects"
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
           >
             Enroll Now
-          </Link>
+          </ScrollToTopButton>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default Internship; 

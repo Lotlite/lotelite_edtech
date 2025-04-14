@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const ITProjectTraining = () => (
   <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
@@ -203,9 +204,12 @@ const ITProjectTraining = () => (
             <p className="text-gray-600 mb-8">
               Enroll now in our IT Project Training Program and kickstart your career with hands-on experience
             </p>
-            <Link to="/mern-projects" className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transform hover:-translate-y-1 transition-all">
+            <ScrollToTopButton 
+              to="/mern-projects" 
+              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transform hover:-translate-y-1 transition-all"
+            >
               Enroll Now
-            </Link>
+            </ScrollToTopButton>
           </div>
         </div>
       </div>
