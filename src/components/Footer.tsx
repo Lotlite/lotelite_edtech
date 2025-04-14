@@ -39,9 +39,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Programs</h3>
             <ul className="space-y-2">
-              <li><button onClick={() => handleLinkClick('/it-project')} className="text-gray-400 hover:text-white transition-colors">Data Science</button></li>
+              <li><button onClick={() => handleLinkClick('/it-project')} className="text-gray-400 hover:text-white transition-colors">IT Project Training Program</button></li>
               <li><button onClick={() => handleLinkClick('/mern-projects')} className="text-gray-400 hover:text-white transition-colors">Software Development</button></li>
-              <li><button onClick={() => handleLinkClick('/internship-program')} className="text-gray-400 hover:text-white transition-colors">Digital Marketing</button></li>
+              <li><button onClick={() => handleLinkClick('/internship-program')} className="text-gray-400 hover:text-white transition-colors">Internship Programs</button></li>
               <li><button onClick={() => handleLinkClick('/foreign-degree-programs')} className="text-gray-400 hover:text-white transition-colors">Foreign Degree</button></li>
               <li><button onClick={() => handleLinkClick('/foreign-exchange')} className="text-gray-400 hover:text-white transition-colors">Foreign Exchange Programs</button></li>
               <li><button onClick={() => handleLinkClick('/placement-guarantee-program')} className="text-gray-400 hover:text-white transition-colors">Placement Guarantee Program</button></li>
@@ -62,12 +62,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><button onClick={() => handleLinkClick('/internship-program')} className="text-gray-400 hover:text-white transition-colors">Internship Programs</button></li>
+              {/* <li><button onClick={() => handleLinkClick('/internship-program')} className="text-gray-400 hover:text-white transition-colors">Internship Programs</button></li> */}
               <li><button onClick={() => handleLinkClick('/placement-guarantee-program')} className="text-gray-400 hover:text-white transition-colors">Career Services</button></li>
               <li><button onClick={() => handleLinkClick('/university-partner-program')} className="text-gray-400 hover:text-white transition-colors">University Partners</button></li>
-              <li><button onClick={() => handleLinkClick('/foreign-exchange')} className="text-gray-400 hover:text-white transition-colors">Student Exchange</button></li>
+              {/* <li><button onClick={() => handleLinkClick('/foreign-exchange')} className="text-gray-400 hover:text-white transition-colors">Student Exchange</button></li> */}
               <li><button onClick={() => handleLinkClick('/maang-certificates')} className="text-gray-400 hover:text-white transition-colors">MAANG Certificates</button></li>
-              <li><button onClick={() => handleLinkClick('/it-project')} className="text-gray-400 hover:text-white transition-colors">IT Projects</button></li>
+              {/* <li><button onClick={() => handleLinkClick('/it-project')} className="text-gray-400 hover:text-white transition-colors">IT Projects</button></li> */}
             </ul>
           </div>
         </div>
@@ -102,8 +102,8 @@ const Footer = () => {
           <div className="mt-4 flex flex-wrap justify-center md:justify-start space-x-4 text-sm text-gray-400">
             <button onClick={() => handleLinkClick('/privacy-policy')} className="hover:text-white transition-colors">Privacy Policy</button>
             <button onClick={() => handleLinkClick('/terms')} className="hover:text-white transition-colors">Terms of Service</button>
-            <button onClick={() => handleLinkClick('/cookies')} className="hover:text-white transition-colors">Cookie Policy</button>
-            <button onClick={() => handleLinkClick('/accessibility')} className="hover:text-white transition-colors">Accessibility</button>
+            {/* <button onClick={() => handleLinkClick('/cookies')} className="hover:text-white transition-colors">Cookie Policy</button>
+            <button onClick={() => handleLinkClick('/accessibility')} className="hover:text-white transition-colors">Accessibility</button> */}
           </div>
         </div>
       </div>

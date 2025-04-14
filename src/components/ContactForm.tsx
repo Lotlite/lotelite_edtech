@@ -88,7 +88,7 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0077B5] focus:border-[#0077B5] outline-none"
-                    placeholder="vatsal vishal"
+                    placeholder="Enter your Full Name"
                     required
                   />
                 </div>
@@ -104,7 +104,7 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0077B5] focus:border-[#0077B5] outline-none"
-                    placeholder="vatsal@gmail.com"
+                    placeholder="Enter your Email Id"
                     required
                   />
                 </div>
@@ -120,7 +120,7 @@ const ContactForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0077B5] focus:border-[#0077B5] outline-none"
-                    placeholder="+91 8805843309"
+                    placeholder="Enter Phone Number"
                   />
                 </div>
                 
@@ -137,10 +137,10 @@ const ContactForm = () => {
                     required
                   >
                     <option value="">Select an option</option>
-                    <option value="Data Science">Data Science</option>
-                    <option value="Software Development">Software Development</option>
-                    <option value="Business Analytics">Business Analytics</option>
-                    <option value="Management">Management</option>
+                    <option value="Data Science">Internship Programs</option>
+                    <option value="Software Development">IT Project</option>
+                    <option value="Business Analytics">Placement Guarantee Program</option>
+                    <option value="Management">Certificates</option>
                     <option value="Corporate Training">Corporate Training</option>
                     <option value="Study Abroad">Study Abroad</option>
                     <option value="Other">Other</option>

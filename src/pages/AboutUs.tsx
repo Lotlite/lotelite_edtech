@@ -477,7 +477,7 @@ const AboutUs = () => {
 
              
               {/* Team Member 7 */}
-              <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              {/* <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
                   src="/Litika_Gaikwad.jpg"
@@ -495,7 +495,7 @@ const AboutUs = () => {
                 <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
                 <span className="text-xs text-gray-600">Available for projects</span>
               </div>
-            </div>
+            </div> */}
 
              {/* Team Member 8 */}
              <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>

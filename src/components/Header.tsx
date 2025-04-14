@@ -55,9 +55,9 @@ const Header = () => {
           </nav>
 
           <div className="hidden lg:flex items-center space-x-3">
-            <ScrollToTopButton to="/career" className="px-4 py-1.5 text-[#0077B5] font-medium border-2 border-[#0077B5] rounded-md hover:bg-[#0077B5] hover:text-white transition-all duration-200 text-sm">
+            {/* <ScrollToTopButton to="/career" className="px-4 py-1.5 text-[#0077B5] font-medium border-2 border-[#0077B5] rounded-md hover:bg-[#0077B5] hover:text-white transition-all duration-200 text-sm">
               Career
-            </ScrollToTopButton>
+            </ScrollToTopButton> */}
             <ScrollToTopButton to="/contact-us" className="px-4 py-1.5 bg-[#0077B5] text-white font-medium rounded-md hover:bg-[#005d8f] transition-colors duration-200 text-sm">
               Contact Us
             </ScrollToTopButton>

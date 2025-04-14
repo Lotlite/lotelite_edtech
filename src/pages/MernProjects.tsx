@@ -3,6 +3,10 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const MernProjects = () => {
   const navigate = useNavigate();
+  const handleLinkClick = (to: string) => {
+    navigate(to);
+    window.scrollTo(0, 0);
+  };
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
   const projects = [
@@ -124,7 +128,7 @@ const MernProjects = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      
+
 
       <div className="flex">
         {/* Categories Sidebar */}
@@ -154,8 +158,8 @@ const MernProjects = () => {
             {filteredProjects.map((project) => (
               <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="relative h-48">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover"
                   />
@@ -165,18 +169,18 @@ const MernProjects = () => {
                   <h3 className="text-xl font-semibold mb-3 line-clamp-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4 text-sm line-clamp-3">{project.description}</p>
                   <div className="flex justify-between">
-                    <button 
-                      onClick={() => handleEnroll(project.id)}
+                    <button
+                      onClick={() => navigate('/contact-us')}
                       className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors"
                     >
-                      Enroll Now
+                      Enroll Now
                     </button>
-                    <button 
+                    {/* <button 
                       onClick={() => handleDemo(project.id)}
                       className="bg-purple-600 text-white px-6 py-2 rounded-md hover:bg-purple-700 transition-colors"
                     >
                       Demo
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
