@@ -311,6 +311,75 @@ const AboutUs = () => {
                 <Star className="w-3.5 h-3.5 text-yellow-400" />
               </div>
             </div>
+
+          {/* Advisor 4 */}
+          <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Suresh_Kapare.jpeg"
+                  alt="Suresh kapare"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Suresh Kapare</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Associate Professor</p>
+              <p className="text-xs text-gray-500">
+              Associate Professor at MIT ADT University with 12 years of experience in Agile Software Development, Scrum, andproject management</p>
+              <div className="mt-3 flex justify-center">
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+              </div>
+            </div>
+
+            {/* Advisor 5 */}
+          <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Ankur_Kumar.jpg"
+                  alt="Ankur Kumar"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Ankur Kumar</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Chief Technology Officer</p>
+              <p className="text-xs text-gray-500">
+              CTO at Lotlite Technology and Director at RichNusGeeks, IIT Bombay graduate, expert in Cloud Computing</p>
+              <div className="mt-3 flex justify-center">
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+              </div>
+            </div>
+
+            {/* Advisor 5 */}
+            <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Prashant_Dhotre.jpeg"
+                  alt="Prashant Dhotre"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Prashant Dhotre</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm"> Professor and HoD of CSE at MIT</p>
+              <p className="text-xs text-gray-500">
+              PhD from Aalborg University, Professor and HoD of CSE at MIT ADT University, ISO 27001 Lead Auditor, and author</p>
+              <div className="mt-3 flex justify-center">
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -369,7 +438,7 @@ const AboutUs = () => {
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/t3.jpg"
+                  src="/vishal_Choudhari.jpg"
                   alt="Vishal Chaudhari"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
@@ -390,7 +459,7 @@ const AboutUs = () => {
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/t4.jpg"
+                  src="/Shubham Kokate.jpg"
                   alt="Shubham Kokate"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
@@ -427,45 +496,92 @@ const AboutUs = () => {
                 <span className="text-xs text-gray-600">Available for projects</span>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* UK Business Partner Section with Slide-in Animation */}
-      <div className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className={`text-center mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our UK Business Partner</h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className={`bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg p-6 transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
-              <div className="grid md:grid-cols-2 gap-6 items-center">
-                <div>
-                  <img 
-                    src="/uk-partner.jpg" 
-                    alt="UK Business Partner" 
-                    className="w-full h-56 object-cover rounded-lg shadow-md transform hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Strategic Partnership</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    We have established a strong partnership with leading UK-based organizations to expand our global presence and enhance our educational offerings.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    This partnership enables us to provide international exposure and opportunities to our students while maintaining the highest standards of education.
-                  </p>
-                  <div className="mt-4 flex items-center text-blue-600">
-                    <span className="text-xs font-medium">Learn more about our partnership</span>
-                    <ArrowRight className="w-3 h-3 ml-1" />
-                  </div>
-                </div>
+             {/* Team Member 6 */}
+             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Yash_k.jpg"
+                  alt="Yash Kadu"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Yash Kadu</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+                Creating efficient and scalable solutions
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* UK Business Partner Section with Slide-in Animation */}
+    <div className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className={`text-center mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our UK Business Partner</h2>
+          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+                
+        <div className="flex flex-wrap justify-center gap-64">
+        {/* UK Partner 1 */}
+        <div className={`w-[300px] bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+          <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+            <img
+              src="/t3.jpg"
+              alt="Dilip Pungalia"
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+          </div>
+          <h3 className="text-lg font-semibold mb-1 text-gray-900">Dilip Pungalia</h3>
+          <p className="text-blue-600 mb-2 font-medium text-sm"> business leader, blockchain advisor</p>
+          <p className="text-xs text-gray-500">
+            is a business leader, Artificial Intelligence consultant, blockchain advisor, metaverse solution expert, data leader, technologist, and business, process,
+            & technology architect. As a board member and significant shareholder of Ztudium
+          </p>
+          <div className="mt-3 flex justify-center">
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+          </div>
+        </div>
+
+        {/* UK partner 2 */}
+        <div className={`w-[300px] bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+          <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+            <img
+              src="/t3.jpg"
+              alt="Dinis Guarda"
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+          </div>
+          <h3 className="text-lg font-semibold mb-1 text-gray-900">Dinis Guarda</h3>
+          <p className="text-blue-600 mb-2 font-medium text-sm">Founder, CEO of Ztudium Group</p>
+          <p className="text-xs text-gray-500">
+            Founder, CEO of Ztudium Group, Author of 4IR AI Blockchain Fintech IoT. Dinis is a World Class Leader in multiple fields and has a passsion to push ideas,
+            action and technology together to create better solutions, narratives and paths.
+          </p>
+          <div className="mt-3 flex justify-center">
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
       {/* Blockchain Partner Section with Slide-in Animation */}
       <div className="py-20 bg-white">
