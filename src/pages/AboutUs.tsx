@@ -162,7 +162,7 @@ const AboutUs = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Board of Directors</h2>
             <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Director 1 */}
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
@@ -186,7 +186,7 @@ const AboutUs = () => {
             </div>
 
             {/* Director 2 */}
-            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
                   src="/Saiyam_kumar.jpg"
