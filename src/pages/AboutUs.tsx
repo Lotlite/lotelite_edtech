@@ -348,16 +348,16 @@ const AboutUs = () => {
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/vatsal.jpg.jpeg"
-                  alt="Vatsal Vishal"
+                  src="/Shubham Kokate.jpg"
+                  alt="Shubham Kokate"
                   className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">Vatsal Vishal</h3>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Shubham Kokate</h3>
               <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
               <p className="text-xs text-gray-500">
-                Building innovative software solutions
+                Creating efficient and scalable solutions
               </p>
               <div className="mt-3 flex justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
@@ -391,15 +391,15 @@ const AboutUs = () => {
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
                   src="/t4.jpg"
-                  alt="Shubham Kokate"
+                  alt="Vishal Chaudhari"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">Shubham Kokate</h3>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Vishal Chaudhari</h3>
               <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
               <p className="text-xs text-gray-500">
-                Creating efficient and scalable solutions
+                Developing robust software applications
               </p>
               <div className="mt-3 flex justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
