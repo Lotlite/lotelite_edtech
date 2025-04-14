@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle, Users, Award, Briefcase, Clock, Globe } from 'lucide-react';
+import stdImg from '../../public/about-five2.png'
 
 const Differentiators = () => {
   const features = [
@@ -83,7 +84,7 @@ const Differentiators = () => {
             
             <div className="md:w-1/2">
               <img 
-                src="./src/images/1741581292597.jpg" 
+                src={stdImg} 
                 alt="Students in classroom" 
                 className="rounded-lg shadow-md"
               />

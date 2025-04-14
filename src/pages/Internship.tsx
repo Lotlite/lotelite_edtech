@@ -50,13 +50,13 @@ const Internship = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
                   <Link 
-                to="/internship/enroll"
+                to="/mern-projects"
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
                   >
                     Enroll Now
                   </Link>
                   <Link 
-                to="/internship/programs"
+                to="/university-partner-program"
                 className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors duration-300"
               >
                 View Programs
@@ -526,7 +526,7 @@ const Internship = () => {
             Join our internship programs and take the first step towards a successful career in tech.
           </p>
           <Link
-            to="/internship/enroll"
+            to="/mern-projects"
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
           >
             Enroll Now

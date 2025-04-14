@@ -203,7 +203,7 @@ const ITProjectTraining = () => (
             <p className="text-gray-600 mb-8">
               Enroll now in our IT Project Training Program and kickstart your career with hands-on experience
             </p>
-            <Link to="/enroll" className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transform hover:-translate-y-1 transition-all">
+            <Link to="/mern-projects" className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transform hover:-translate-y-1 transition-all">
               Enroll Now
             </Link>
           </div>
