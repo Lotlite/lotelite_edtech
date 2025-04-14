@@ -339,16 +339,16 @@ const AboutUs = () => {
           <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/Ankur_Kumar.jpg"
-                  alt="Ankur Kumar"
+                  src="/amit-"
+                  alt="Amit Arya"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">Ankur Kumar</h3>
-              <p className="text-blue-600 mb-2 font-medium text-sm">Chief Technology Officer</p>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Amit Arya</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Team Manager</p>
               <p className="text-xs text-gray-500">
-              CTO at Lotlite Technology and Director at RichNusGeeks, IIT Bombay graduate, expert in Cloud Computing</p>
+              Managing team operations and project delivery</p>
               <div className="mt-3 flex justify-center">
                 <Star className="w-3.5 h-3.5 text-yellow-400" />
                 <Star className="w-3.5 h-3.5 text-yellow-400" />
@@ -480,7 +480,7 @@ const AboutUs = () => {
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/c1.jpg"
+                  src="/amit-arya.jpg"
                   alt="Amit Kumar"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />

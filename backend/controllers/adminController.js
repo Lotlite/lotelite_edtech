@@ -22,7 +22,7 @@ const adminController = {
       // Generate JWT token
       const token = jwt.sign(
         { email: ADMIN_EMAIL },
-        process.env.JWT_SECRET,
+        process.env.JWT_SECRET || 'lotlite-admin-secret-key-2024',
         { expiresIn: '24h' }
       );
 
@@ -49,7 +49,18 @@ const adminController = {
       const recentContacts = await Contact.find()
         .sort({ createdAt: -1 })
         .limit(5)
-        .select('name email phone message createdAt status');
+        .select('firstName lastName email phone message createdAt status');
+
+      // Format the contacts to match the expected structure in the frontend
+      const formattedContacts = recentContacts.map(contact => ({
+        _id: contact._id,
+        name: `${contact.firstName} ${contact.lastName}`,
+        email: contact.email,
+        phone: contact.phone,
+        message: contact.message,
+        createdAt: contact.createdAt,
+        status: contact.status
+      }));
 
       res.status(200).json({
         success: true,
@@ -57,7 +68,7 @@ const adminController = {
           totalContacts,
           totalApplications: 0,
           pendingApplications: 0,
-          recentContacts
+          recentContacts: formattedContacts
         }
       });
     } catch (error) {
