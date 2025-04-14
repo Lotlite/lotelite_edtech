@@ -19,8 +19,8 @@ const AboutUs = () => {
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h1 className="text-6xl font-bold mb-6 text-center">About Us</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto text-center">
-              Empowering education through technology and innovation
-            </p>
+            Empowering education through technology and innovation
+          </p>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
@@ -34,7 +34,7 @@ const AboutUs = () => {
               <h2 className="text-4xl font-bold mb-8 text-gray-900 relative inline-block">
                 Our Story
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-700 delay-500 origin-left"></span>
-              </h2>
+            </h2>
               <p className="text-xl text-gray-600 mb-12 leading-relaxed">
                 Lotlite Technology is a pioneering force in global education technology, dedicated to transforming lives through innovative learning solutions. Founded with a vision to bridge the gap between education and industry, we've grown into a trusted partner for students and professionals worldwide.
               </p>
@@ -92,10 +92,10 @@ const AboutUs = () => {
                   To be the world's leading technology education platform, setting new standards in online learning and professional development. We envision a future where quality education knows no boundaries, and every individual has the opportunity to excel in their chosen field.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
 
       {/* Why Choose Us Section with Fade-up Animation */}
       <div className="py-20 bg-white">
@@ -115,8 +115,8 @@ const AboutUs = () => {
                 <div className="mt-3 flex items-center text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-xs font-medium">Learn more</span>
                   <ArrowRight className="w-3 h-3 ml-1" />
-                </div>
-              </div>
+                    </div>
+                  </div>
               <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-blue-50 group border border-blue-100">
                 <div className="text-blue-600 mb-3 bg-white p-2 rounded-full w-14 h-14 mx-auto flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
                   <Users className="w-7 h-7" />
@@ -126,8 +126,8 @@ const AboutUs = () => {
                 <div className="mt-3 flex items-center text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-xs font-medium">Learn more</span>
                   <ArrowRight className="w-3 h-3 ml-1" />
-                </div>
-              </div>
+                    </div>
+                  </div>
               <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-blue-50 group border border-blue-100">
                 <div className="text-blue-600 mb-3 bg-white p-2 rounded-full w-14 h-14 mx-auto flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
                   <Shield className="w-7 h-7" />
@@ -348,16 +348,16 @@ const AboutUs = () => {
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/Shubham Kokate.jpg"
-                  alt="Shubham Kokate"
+                  src="/vatsal.jpg.jpeg"
+                  alt="Vatsal Vishal"
                   className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">Shubham Kokate</h3>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Vatsal Vishal</h3>
               <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
               <p className="text-xs text-gray-500">
-                Creating efficient and scalable solutions
+                Building innovative software solutions
               </p>
               <div className="mt-3 flex justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
@@ -391,15 +391,15 @@ const AboutUs = () => {
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
                   src="/t4.jpg"
-                  alt="Vishal Chaudhari"
+                  alt="Shubham Kokate"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">Vishal Chaudhari</h3>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Shubham Kokate</h3>
               <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
               <p className="text-xs text-gray-500">
-                Developing robust software applications
+                Creating efficient and scalable solutions
               </p>
               <div className="mt-3 flex justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
