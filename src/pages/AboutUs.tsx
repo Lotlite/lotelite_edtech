@@ -19,8 +19,8 @@ const AboutUs = () => {
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h1 className="text-6xl font-bold mb-6 text-center">About Us</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto text-center">
-              Empowering education through technology and innovation
-            </p>
+            Empowering education through technology and innovation
+          </p>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
@@ -34,7 +34,7 @@ const AboutUs = () => {
               <h2 className="text-4xl font-bold mb-8 text-gray-900 relative inline-block">
                 Our Story
                 <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 transform scale-x-0 transition-transform duration-700 delay-500 origin-left"></span>
-              </h2>
+            </h2>
               <p className="text-xl text-gray-600 mb-12 leading-relaxed">
                 Lotlite Technology is a pioneering force in global education technology, dedicated to transforming lives through innovative learning solutions. Founded with a vision to bridge the gap between education and industry, we've grown into a trusted partner for students and professionals worldwide.
               </p>
@@ -92,10 +92,10 @@ const AboutUs = () => {
                   To be the world's leading technology education platform, setting new standards in online learning and professional development. We envision a future where quality education knows no boundaries, and every individual has the opportunity to excel in their chosen field.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
 
       {/* Why Choose Us Section with Fade-up Animation */}
       <div className="py-20 bg-white">
@@ -115,8 +115,8 @@ const AboutUs = () => {
                 <div className="mt-3 flex items-center text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-xs font-medium">Learn more</span>
                   <ArrowRight className="w-3 h-3 ml-1" />
-                </div>
-              </div>
+                    </div>
+                  </div>
               <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-blue-50 group border border-blue-100">
                 <div className="text-blue-600 mb-3 bg-white p-2 rounded-full w-14 h-14 mx-auto flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
                   <Users className="w-7 h-7" />
@@ -126,8 +126,8 @@ const AboutUs = () => {
                 <div className="mt-3 flex items-center text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-xs font-medium">Learn more</span>
                   <ArrowRight className="w-3 h-3 ml-1" />
-                </div>
-              </div>
+                    </div>
+                  </div>
               <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-blue-50 group border border-blue-100">
                 <div className="text-blue-600 mb-3 bg-white p-2 rounded-full w-14 h-14 mx-auto flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
                   <Shield className="w-7 h-7" />
@@ -162,7 +162,7 @@ const AboutUs = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Board of Directors</h2>
             <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Director 1 */}
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
@@ -187,28 +187,6 @@ const AboutUs = () => {
 
             {/* Director 2 */}
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
-              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
-                <img
-                  src="/Ankur_Kumar.jpg"
-                  alt="Ankur Kumar"
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
-              </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">Ankur Kumar</h3>
-              <p className="text-blue-600 mb-2 font-medium text-sm">Chief Technology Officer</p>
-              <p className="text-xs text-gray-500">
-                CTO at Lotlite Technology and Director at RichNusGeeks, IIT Bombay graduate, expert in Cloud Computing
-              </p>
-              <div className="mt-3 flex justify-center space-x-1">
-                <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                <div className="w-1.5 h-1.5 rounded-full bg-blue-300"></div>
-                <div className="w-1.5 h-1.5 rounded-full bg-blue-200"></div>
-              </div>
-            </div>
-
-            {/* Director 3 */}
-            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
                   src="/Saiyam_kumar.jpg"
@@ -240,8 +218,32 @@ const AboutUs = () => {
             <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {/* Advisor 1 */}
+            {/* Advisor 1 - Ankur Kumar (moved from Board of Directors) */}
             <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Ankur_Kumar.jpg"
+                  alt="Ankur Kumar"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Ankur Kumar</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Chief Technology Officer</p>
+              <p className="text-xs text-gray-500">
+                CTO at Lotlite Technology and Director at RichNusGeeks, IIT Bombay graduate, expert in Cloud Computing
+              </p>
+              <div className="mt-3 flex justify-center">
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+              </div>
+            </div>
+
+            {/* Advisor 2 */}
+            <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
                   src="/Sachin_Sakhare.jpg"
@@ -264,8 +266,8 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Advisor 2 */}
-            <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+            {/* Advisor 3 */}
+            <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
                   src="/Mohd_Shafi.jpeg"
@@ -288,7 +290,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Advisor 3 */}
+            {/* Advisor 4 */}
             <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
@@ -303,6 +305,29 @@ const AboutUs = () => {
               <p className="text-xs text-gray-500">
                 Assistant Professor at MIT ADT University with 8+ years of experience, gold medalist in Economics, and multiple advanced degrees.
               </p>
+              <div className="mt-3 flex justify-center">
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 text-yellow-400" />
+              </div>
+            </div>
+
+            {/* Advisor 5 */}
+            <div className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Suresh_Kapare.jpeg"
+                  alt="Suresh kapare"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Suresh Kapare</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Associate Professor</p>
+              <p className="text-xs text-gray-500">
+              Associate Professor at MIT ADT University with 12 years of experience in Agile Software Development, Scrum, andproject management</p>
               <div className="mt-3 flex justify-center">
                 <Star className="w-3.5 h-3.5 text-yellow-400" />
                 <Star className="w-3.5 h-3.5 text-yellow-400" />
@@ -327,8 +352,7 @@ const AboutUs = () => {
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/t1.jpg"
-                  
+                  src="/Vikash_dubey.jpg"
                   alt="Vikash Dubey"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
@@ -345,8 +369,29 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Team Member 2 */}
-            {/* Team Member 2 */}
+           {/* Team Member 2 */}
+           <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Amit_Arya.jpg"
+                  alt="Amit Arya"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Amit Arya</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Project Manager</p>
+              <p className="text-xs text-gray-500">
+                Managing team operations and project delivery
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+
+            {/* Team Member 3 */}
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
@@ -367,13 +412,11 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Team Member 3 */}
-            {/* Team Member 3 */}
+            {/* Team Member 4 */}
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/t3.jpg"
-               
+                  src="/vishal_Choudhari.jpg"
                   alt="Vishal Chaudhari"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
@@ -390,13 +433,11 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Team Member 4 */}
-            {/* Team Member 4 */}
+            {/* Team Member 5 */}
             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/t4.jpg"
-              
+                  src="/Shubham Kokate.jpg"
                   alt="Shubham Kokate"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
@@ -413,20 +454,127 @@ const AboutUs = () => {
               </div>
             </div>
 
-            {/* Team Member 5 */}
-            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+            {/* Team Member 6 */}
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
               <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
                 <img
-                  src="/c1.jpg"
-                  alt="Amit Kumar"
+                  src="/Yash_k.jpg"
+                  alt="Yash Kadu"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">Amit Kumar</h3>
-              <p className="text-blue-600 mb-2 font-medium text-sm">Team Manager</p>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Yash Kadu</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
               <p className="text-xs text-gray-500">
-                Managing team operations and project delivery
+                Robust Software Application Development
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+             
+              {/* Team Member 7 */}
+              <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Litika_Gaikwad.jpg"
+                  alt="Litika Gaikwad"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Litika Gaikwad</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+                Building innovative software solutions
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+             {/* Team Member 8 */}
+             <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Pranay_sune.jpg"
+                  alt="Pranay Sune"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Pranay Sune</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+                Reliable Custom Software Services
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+            {/* Team Member 8 */}
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Litika_passport.jpg"
+                  alt="Litika Gaikwad"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Litika Gaikwad</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+                Building innovative software solutions
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+            {/* Team Member 9*/}
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/chiya.jpg"
+                  alt="Chiya Pandey"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Chiya Pandey</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+              Creating efficient and scalable solutions
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+
+              {/* Team Member 10 */}
+              <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/Aayush Photo.jpg"
+                  alt="Aayush Shah"
+                  className="w-full h-full object-cover transform group-hover:scale-70 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Aayush Shah</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+              Robust Software Application Development
               </p>
               <div className="mt-3 flex justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
@@ -438,74 +586,66 @@ const AboutUs = () => {
       </div>
 
       {/* UK Business Partner Section with Slide-in Animation */}
-      <div className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className={`text-center mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our UK Business Partner</h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+    <div className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className={`text-center mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our UK Business Partner</h2>
+          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+                
+        <div className="flex flex-wrap justify-center gap-64">
+        {/* UK Partner 1 */}
+        <div className={`w-[300px] bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+          <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+            <img
+              src="/Dilip_Pungalia.png"
+              alt="Dilip Pungalia"
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <div className={`bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg p-6 transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
-              <div className="grid md:grid-cols-2 gap-6 items-center">
-                <div>
-                  <img 
-                    src="/uk-partner.jpg" 
-                    alt="UK Business Partner" 
-                    className="w-full h-56 object-cover rounded-lg shadow-md transform hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Strategic Partnership</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    We have established a strong partnership with leading UK-based organizations to expand our global presence and enhance our educational offerings.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    This partnership enables us to provide international exposure and opportunities to our students while maintaining the highest standards of education.
-                  </p>
-                  <div className="mt-4 flex items-center text-blue-600">
-                    <span className="text-xs font-medium">Learn more about our partnership</span>
-                    <ArrowRight className="w-3 h-3 ml-1" />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <h3 className="text-lg font-semibold mb-1 text-gray-900">Dilip Pungalia</h3>
+          <p className="text-blue-600 mb-2 font-medium text-sm"> business leader, blockchain advisor</p>
+          <p className="text-xs text-gray-500">
+            is a business leader, Artificial Intelligence consultant, blockchain advisor, metaverse solution expert, data leader, technologist, and business, process,
+            & technology architect. As a board member and significant shareholder of Ztudium
+          </p>
+          <div className="mt-3 flex justify-center">
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+          </div>
+        </div>
+
+        {/* UK partner 2 */}
+        <div className={`w-[300px] bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-gray-200`}>
+          <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+            <img
+              src="/t3.jpg"
+              alt="Dinis Guarda"
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+          </div>
+          <h3 className="text-lg font-semibold mb-1 text-gray-900">Dinis Guarda</h3>
+          <p className="text-blue-600 mb-2 font-medium text-sm">Founder, CEO of Ztudium Group</p>
+          <p className="text-xs text-gray-500">
+            Founder, CEO of Ztudium Group, Author of 4IR AI Blockchain Fintech IoT. Dinis is a World Class Leader in multiple fields and has a passsion to push ideas,
+            action and technology together to create better solutions, narratives and paths.
+          </p>
+          <div className="mt-3 flex justify-center">
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 text-yellow-400" />
           </div>
         </div>
       </div>
-      <div className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className={`text-center mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our UK Business Partner</h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className={`bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg p-6 transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
-              <div className="grid md:grid-cols-2 gap-6 items-center">
-                <div>
-                  <img 
-                    src="/uk-partner.jpg" 
-                    alt="UK Business Partner" 
-                    className="w-full h-56 object-cover rounded-lg shadow-md transform hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">Strategic Partnership</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    We have established a strong partnership with leading UK-based organizations to expand our global presence and enhance our educational offerings.
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    This partnership enables us to provide international exposure and opportunities to our students while maintaining the highest standards of education.
-                  </p>
-                  <div className="mt-4 flex items-center text-blue-600">
-                    <span className="text-xs font-medium">Learn more about our partnership</span>
-                    <ArrowRight className="w-3 h-3 ml-1" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
 
       {/* Blockchain Partner Section with Slide-in Animation */}
       <div className="py-20 bg-white">
