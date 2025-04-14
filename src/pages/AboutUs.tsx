@@ -567,7 +567,7 @@ const AboutUs = () => {
                 <img
                   src="/Aayush Photo.jpg"
                   alt="Aayush Shah"
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover transform group-hover:scale-70 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
