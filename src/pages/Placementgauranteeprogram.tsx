@@ -35,7 +35,7 @@ const PlacementGuaranteeProgram = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
             <Link 
-              to="/contact-us"
+              to="/mern-projects"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
             >
               Enroll Now
@@ -117,10 +117,10 @@ const PlacementGuaranteeProgram = () => {
                 </ul>
               </div>
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-8 py-4 border-t">
-                <a href="#" className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors">
+                <Link to="/contact-us" className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors">
                   Learn More
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -150,10 +150,10 @@ const PlacementGuaranteeProgram = () => {
                 </ul>
               </div>
               <div className="bg-gradient-to-r from-purple-50 to-pink-50 px-8 py-4 border-t">
-                <a href="#" className="text-purple-600 font-medium flex items-center hover:text-purple-700 transition-colors">
+                <Link to="/university-partner-program" className="text-purple-600 font-medium flex items-center hover:text-purple-700 transition-colors">
                   View Partners
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -183,10 +183,10 @@ const PlacementGuaranteeProgram = () => {
                 </ul>
               </div>
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 px-8 py-4 border-t">
-                <a href="#" className="text-green-600 font-medium flex items-center hover:text-green-700 transition-colors">
+                <Link to="/contact-us" className="text-green-600 font-medium flex items-center hover:text-green-700 transition-colors">
                   Meet Mentors
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

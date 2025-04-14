@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 py-3">
         <div className="flex justify-between items-center">
           <Link to="/">
-            <img src={LogoImg} alt="lotlite-logo" className="w-full max-w-[200px] h-auto" />
+            <img src={LogoImg} alt="lotlite-logo" className="h-10 w-auto sm:h-12 md:h-14 lg:h-16 max-w-none cursor-pointer" />
           </Link>
 
           {/* Desktop Navigation */}
