@@ -323,40 +323,110 @@ const AboutUs = () => {
             <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { name: 'Vatsal Vishal', role: 'Founder & CEO', image: '/vatsal.jpg.jpeg' },
-              { name: 'John Doe', role: 'CTO', image: '/t2.png' },
-              { name: 'Jane Smith', role: 'Head of Operations', image: '/t3.png' },
-              { name: 'Mike Johnson', role: 'Lead Developer', image: '/t4.png' }
-            ].map((member, index) => (
-              <div 
-                key={member.name}
-                className="bg-white rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300"
-                style={{ 
-                  opacity: isVisible ? 1 : 0,
-                  transform: `translateY(${isVisible ? 0 : 20}px)`,
-                  transitionDelay: `${index * 100}ms`
-                }}
-              >
-                <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
-                  <img 
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
-                </div>
-                <h3 className="text-lg font-semibold mb-1 text-gray-900">Vatsal Vishal</h3>
-                <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
-                <p className="text-xs text-gray-500">
-                  Building innovative software solutions
-                </p>
-                <div className="mt-3 flex justify-center">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
-                  <span className="text-xs text-gray-600">Available for projects</span>
-                </div>
+            {/* Team Member 1 */}
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/t1.jpg"
+                  alt="Vikash Dubey"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
-            ))}
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Vikash Dubey</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Team Lead and Solution Architect</p>
+              <p className="text-xs text-gray-500">
+                Leading technical solutions and team development
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+            {/* Team Member 2 */}
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/vatsal.jpg.jpeg"
+                  alt="Vatsal Vishal"
+                  className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Vatsal Vishal</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+                Building innovative software solutions
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+            {/* Team Member 3 */}
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/t3.jpg"
+                  alt="Vishal Chaudhari"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Vishal Chaudhari</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+                Developing robust software applications
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+            {/* Team Member 4 */}
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/t4.jpg"
+                  alt="Shubham Kokate"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Shubham Kokate</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Software Developer</p>
+              <p className="text-xs text-gray-500">
+                Creating efficient and scalable solutions
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
+
+            {/* Team Member 5 */}
+            <div className={`bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl shadow-md p-5 text-center transform transition-all duration-1000 delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} hover:shadow-xl border border-blue-100`}>
+              <div className="w-28 h-28 mx-auto mb-3 rounded-full overflow-hidden shadow-lg border-4 border-white relative group">
+                <img
+                  src="/c1.jpg"
+                  alt="Amit Kumar"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Amit Kumar</h3>
+              <p className="text-blue-600 mb-2 font-medium text-sm">Team Manager</p>
+              <p className="text-xs text-gray-500">
+                Managing team operations and project delivery
+              </p>
+              <div className="mt-3 flex justify-center">
+                <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                <span className="text-xs text-gray-600">Available for projects</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
