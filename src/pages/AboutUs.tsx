@@ -486,7 +486,7 @@ const AboutUs = () => {
                 />
                 <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900">Amit arya</h3>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900">Amit Arya</h3>
               <p className="text-blue-600 mb-2 font-medium text-sm">Team Manager</p>
               <p className="text-xs text-gray-500">
                 Managing team operations and project delivery

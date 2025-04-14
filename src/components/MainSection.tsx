@@ -31,7 +31,7 @@ const MainSection = () => {
   ];
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-[50vh] md:h-[70vh] lg:h-screen">
       {/* Carousel container */}
       <div className="relative w-full h-full overflow-hidden">
         {slides.map((slide, index) => (
@@ -44,13 +44,13 @@ const MainSection = () => {
             <img
               src={slide.image}
               alt={slide.alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         ))}
         
         {/* Navigation dots */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
           {slides.map((_, index) => (
             <button
               key={index}
