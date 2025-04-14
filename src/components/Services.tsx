@@ -12,7 +12,7 @@ const Services = () => {
       description: 'Strategic partnerships and training solutions for businesses to enhance their workforce capabilities.',
       icon: <Briefcase className="h-10 w-10 text-white" />,
       category: 'corporate',
-      link: '/corporate-partner-program',
+      link: '/internship-program',
       bgImage: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80'
     },
     {
@@ -21,7 +21,7 @@ const Services = () => {
       description: 'Comprehensive technology solutions including software development, cloud services, and cybersecurity.',
       icon: <Laptop className="h-10 w-10 text-white" />,
       category: 'it',
-      link: '/it-services',
+      link: '/it-project',
       bgImage: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
     },
     {

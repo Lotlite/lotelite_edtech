@@ -233,7 +233,7 @@ const ContactUs = () => {
                 <div>
                   <p className="font-medium">Email</p>
                   <a href="mailto:contact@lotelitetechnology.com" className="text-[#0077B5] hover:underline">
-                    contact@lotelitetechnology.com
+                    s.kumar@lotlitetechnology.com
                   </a>
                 </div>
               </div>
@@ -242,7 +242,8 @@ const ContactUs = () => {
                 <div>
                   <p className="font-medium">Phone</p>
                   <a href="tel:+919876543210" className="text-[#0077B5] hover:underline">
-                    +91 7744888178
+                  +91 8805843309
+                  +91 9766499364
                   </a>
                 </div>
               </div>
@@ -265,7 +266,8 @@ const ContactUs = () => {
                 <div>
                   <p className="font-medium">Address</p>
                   <p className="text-gray-600">
-                  Lotlite Technology Pvt Ltd. Office - 122, Gera Imperium, Opp- Wipro, Hinjewadi Phase 2, Rajiv Gandhi Infotech Park, Pune, Maharashtra 411057
+                  Lotlite Technology Pvt Ltd. Office - 122, Gera Imperium, Opp- Wipro,
+                  Hinjewadi Phase 2, Rajiv Gandhi Infotech Park, Pune, Maharashtra 411057
                   </p>
                 </div>
               </div>
