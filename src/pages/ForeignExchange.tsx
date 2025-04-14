@@ -4,13 +4,16 @@ import { Link } from 'react-router-dom';
 const ForeignExchange = () => (
   <div className="min-h-screen bg-white">
     {/* Hero Section */}
-    <div className="bg-blue-600 text-white py-16">
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Foreign Exchange Program</h1>
-        <p className="text-xl max-w-2xl mx-auto">
+    <div className="relative overflow-hidden bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-32">
+      <div className="absolute inset-0 bg-[url('/hero-pattern.png')] opacity-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/30"></div>
+      <div className="container mx-auto px-4 relative z-10 text-center">
+        <h1 className="text-6xl font-bold mb-6">Foreign Exchange Program</h1>
+        <p className="text-xl text-blue-100 max-w-3xl mx-auto">
           Experience global education and cultural immersion through our student exchange programs
         </p>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
     </div>
 
     {/* Main Content */}
