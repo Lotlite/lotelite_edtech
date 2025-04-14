@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Logo from './Logo';
+import LogoImg from '../../public/assests/logo-lotlite.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,10 +14,7 @@ const Header = () => {
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 py-3">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <Logo />
-            <span className="text-xl font-bold text-[#0077B5]">Technology</span>
-          </Link>
+          <img src={LogoImg} alt="lotlite-logo"/>
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
