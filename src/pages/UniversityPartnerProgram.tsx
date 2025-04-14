@@ -11,12 +11,11 @@ const UniversityPartnerProgram = () => {
   const mouUrls: { [key: string]: string } = {
     'INTI University': '/mous/Inti international University.pdf',
     'Skyline University Sharjah': '/mous/Skyline university college.pdf',
-    'University of Toronto': '/mous/University of Toronto.pdf',
     'MIT World Peace University': '/mous/MIT World Peace University.pdf',
     'MIT ADT University': '/mous/Mit Loni kalbhor.pdf',
     'Raffles University': '/mous/Raffles University.pdf',
-    'Chandigarh University': '/mous/Chandigarh University.pdf',
-    'PVG COET University': '/mous/PVG\'s Coet & GKPIM.pdf'
+    'PVG COET University': '/mous/PVG\'s Coet & GKPIM.pdf',
+    'Uni KL/MIIT': '/mous/Uni KL-MIIT.pdf'
   };
 
   // Auto-rotate carousel
@@ -121,34 +120,40 @@ const UniversityPartnerProgram = () => {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Collaborating with leading institutions worldwide to deliver excellence in education
             </p>
-                </div>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {Object.entries(mouUrls).slice(0, 6).map(([name, url]) => (
-              <div key={name} className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-300">
-                <div className="relative h-48 overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {Object.entries(mouUrls).slice(0, 8).map(([name, url]) => (
+              <div key={name} className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                <div className="relative h-52 overflow-hidden">
                   <img 
                     src={name === 'Raffles University' 
                       ? '/raffle-uni.jpeg' 
                       : name === 'MIT World Peace University'
                       ? '/mit.jpeg'
-                      : name === 'MIT Skyline University'
-                      ? '/WhatsApp Image 2025-03-29 at 1.40.52 PM.jpeg'
+                      : name === 'MIT ADT University'
+                      ? '/Mit_adt1.jpg'
+                      : name === 'Skyline University Sharjah'
+                      ? '/Sky_line.jpg'
                       : name === 'INTI University'
                       ? '/WhatsApp Image 2025-03-29 at 2.30.02 PM.jpeg'
+                      : name === 'PVG COET University'
+                      ? '/PVG_Enginnering.jpg'
+                      : name === 'Uni KL/MIIT'
+                      ? '/UNIKL_MIIT.jpg'
                       : `/src/images/universities/${name.toLowerCase().replace(/\s+/g, '-')}.jpg`}
                     alt={name}
                     className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{name}</h3>
+                <div className="p-6 flex-grow flex items-center justify-center">
+                  <h3 className="text-xl font-bold text-gray-900 text-center">{name}</h3>
                 </div>
               </div>
             ))}
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Benefits Section */}
       <div className="py-20 bg-gray-50">
