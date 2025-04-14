@@ -20,6 +20,7 @@ import AboutUs from './pages/AboutUs';
 import InternshipPrograms from './pages/Internship';
 import MernProjects from './pages/MernProjects';
 import PlacementGuaranteeProgram from './pages/Placementgauranteeprogram';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/career" element={<Career />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Route>
         </Routes>
       </div>
