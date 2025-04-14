@@ -5,7 +5,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: ' Sarah Johnson',
       role: 'Data Scientist at Google',
       image: 't1.jpg',
       content: 'The Data Science program completely transformed my career. I went from being a marketing analyst to a data scientist at Google with a 70% salary increase. The curriculum was challenging but extremely relevant to what employers are looking for.',
@@ -23,7 +23,7 @@ const Testimonials = () => {
     },
     {
       id: 3,
-      name: 'Priya Patel',
+      name: 'Priya patel',
       role: 'Product Manager at Microsoft',
       image: 't3.jpg',
       content: 'The Product Management certification gave me the strategic framework and tools I needed to transition from engineering to product. The industry projects and mentorship were invaluable in helping me understand the role.',
