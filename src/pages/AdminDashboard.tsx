@@ -11,7 +11,8 @@ import {
   User,
   Mail,
   FileCheck,
-  Clock
+  Clock,
+  RefreshCw
 } from 'lucide-react';
 import adminService from '../services/adminService';
 
@@ -27,6 +28,7 @@ const AdminDashboard = () => {
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
     fetchDashboardStats();
@@ -34,13 +36,23 @@ const AdminDashboard = () => {
 
   const fetchDashboardStats = async () => {
     try {
+      setLoading(true);
+      setError('');
+      console.log('Fetching dashboard stats...');
       const data = await adminService.getDashboardStats();
+      console.log('Dashboard stats received:', data);
       setStats(data);
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to fetch dashboard statistics');
+      console.error('Error in fetchDashboardStats:', err);
+      setError(err.response?.data?.message || 'Failed to fetch dashboard statistics. Please check your connection and try again.');
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleRetry = () => {
+    setRetryCount(prev => prev + 1);
+    fetchDashboardStats();
   };
 
   const handleLogout = () => {
@@ -91,9 +103,16 @@ const AdminDashboard = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow">
-              <div className="px-6 py-4 border-b border-gray-200">
+            <div className="bg-white rounded-lg shadow overflow-hidden">
+              <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
                 <h2 className="text-lg font-medium text-gray-900">Recent Contacts</h2>
+                <button 
+                  onClick={handleRetry}
+                  className="p-2 text-gray-500 hover:text-gray-700 rounded-full hover:bg-gray-100"
+                  title="Refresh data"
+                >
+                  <RefreshCw className="h-5 w-5" />
+                </button>
               </div>
               <div className="overflow-x-auto">
                 <table className="min-w-full divide-y divide-gray-200">
@@ -108,22 +127,30 @@ const AdminDashboard = () => {
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
-                    {stats.recentContacts.map((contact: any) => (
-                      <tr key={contact._id}>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{contact.name}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{contact.email}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{contact.phone}</td>
-                        <td className="px-6 py-4 text-sm text-gray-500 max-w-xs truncate">{contact.message}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{new Date(contact.createdAt).toLocaleDateString()}</td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                            contact.status === 'new' ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
-                          }`}>
-                            {contact.status}
-                          </span>
+                    {stats.recentContacts && stats.recentContacts.length > 0 ? (
+                      stats.recentContacts.map((contact: any) => (
+                        <tr key={contact._id}>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{contact.name}</td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{contact.email}</td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{contact.phone}</td>
+                          <td className="px-6 py-4 text-sm text-gray-500 max-w-xs truncate">{contact.message}</td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{new Date(contact.createdAt).toLocaleDateString()}</td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                              contact.status === 'new' ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
+                            }`}>
+                              {contact.status}
+                            </span>
+                          </td>
+                        </tr>
+                      ))
+                    ) : (
+                      <tr>
+                        <td colSpan={6} className="px-6 py-4 text-center text-sm text-gray-500">
+                          No contacts found
                         </td>
                       </tr>
-                    ))}
+                    )}
                   </tbody>
                 </table>
               </div>
@@ -232,7 +259,15 @@ const AdminDashboard = () => {
             </div>
           ) : error ? (
             <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-md">
-              {error}
+              <p className="font-medium">Error loading dashboard data</p>
+              <p className="text-sm mt-1">{error}</p>
+              <button 
+                onClick={handleRetry}
+                className="mt-3 inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              >
+                <RefreshCw className="h-4 w-4 mr-1" />
+                Try Again
+              </button>
             </div>
           ) : (
             renderContent()

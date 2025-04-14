@@ -47,7 +47,7 @@ function App() {
                 </main>
                 <Footer />
                 <WhatsAppButton 
-                  phoneNumber="919876543210" 
+                  phoneNumber="918805843309" 
                   message="Hello, I'm interested in learning more about Lotelite Technology services." 
                 />
               </>

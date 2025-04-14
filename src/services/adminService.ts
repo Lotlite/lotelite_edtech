@@ -19,6 +19,15 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+// Add response interceptor for better error handling
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    console.error('API Error:', error.response?.data || error.message);
+    return Promise.reject(error);
+  }
+);
+
 const adminService = {
   // Login admin
   login: async (email: string, password: string) => {
@@ -29,6 +38,7 @@ const adminService = {
       }
       return response.data;
     } catch (error) {
+      console.error('Login error:', error);
       throw error;
     }
   },
@@ -36,9 +46,12 @@ const adminService = {
   // Get dashboard statistics
   getDashboardStats: async () => {
     try {
+      console.log('Fetching dashboard stats...');
       const response = await api.get('/admin/dashboard/stats');
+      console.log('Dashboard stats response:', response.data);
       return response.data.data;
     } catch (error) {
+      console.error('Error fetching dashboard stats:', error);
       throw error;
     }
   },
@@ -49,6 +62,7 @@ const adminService = {
       const response = await api.get(`/admin/contacts?page=${page}`);
       return response.data.data;
     } catch (error) {
+      console.error('Error fetching contacts:', error);
       throw error;
     }
   },
@@ -59,6 +73,7 @@ const adminService = {
       const response = await api.delete(`/admin/contacts/${id}`);
       return response.data;
     } catch (error) {
+      console.error('Error deleting contact:', error);
       throw error;
     }
   },
@@ -69,6 +84,7 @@ const adminService = {
       const response = await api.get(`/admin/applications?page=${page}`);
       return response.data.data;
     } catch (error) {
+      console.error('Error fetching applications:', error);
       throw error;
     }
   },
@@ -79,6 +95,7 @@ const adminService = {
       const response = await api.patch(`/admin/applications/${id}/status`, { status });
       return response.data;
     } catch (error) {
+      console.error('Error updating application status:', error);
       throw error;
     }
   },
@@ -89,6 +106,7 @@ const adminService = {
       const response = await api.get('/admin/settings');
       return response.data.data;
     } catch (error) {
+      console.error('Error fetching settings:', error);
       throw error;
     }
   },
@@ -99,6 +117,7 @@ const adminService = {
       const response = await api.put('/admin/settings', settings);
       return response.data;
     } catch (error) {
+      console.error('Error updating settings:', error);
       throw error;
     }
   }
