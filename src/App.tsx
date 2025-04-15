@@ -21,6 +21,7 @@ import InternshipPrograms from './pages/Internship';
 import MernProjects from './pages/MernProjects';
 import PlacementGuaranteeProgram from './pages/Placementgauranteeprogram';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
             <Route path="/career" element={<Career />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsAndConditions />} />
           </Route>
         </Routes>
       </div>

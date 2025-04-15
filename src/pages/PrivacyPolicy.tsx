@@ -141,6 +141,8 @@ const PrivacyPolicy: React.FC = () => {
         </motion.div>
 
        
+
+      
        
       </div>
     </div>
