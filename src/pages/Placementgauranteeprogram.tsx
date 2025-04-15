@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Share2, CreditCard, Building2, Users, ChevronRight } from 'lucide-react';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const PlacementGuaranteeProgram = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -92,7 +93,7 @@ const PlacementGuaranteeProgram = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             {/* Feature 1 */}
-            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group">
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group relative min-h-[400px]">
               <div className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
                   <CreditCard className="h-8 w-8 text-white" />
@@ -116,16 +117,16 @@ const PlacementGuaranteeProgram = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-8 py-4 border-t">
-                <Link to="/contact-us" className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-blue-50 to-indigo-50 px-8 py-4 border-t">
+                <ScrollToTopButton to="/contact-us" className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors">
                   Learn More
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </Link>
+                </ScrollToTopButton>
               </div>
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group">
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group relative min-h-[400px]">
               <div className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
                   <Building2 className="h-8 w-8 text-white" />
@@ -149,16 +150,16 @@ const PlacementGuaranteeProgram = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-r from-purple-50 to-pink-50 px-8 py-4 border-t">
-                <Link to="/university-partner-program" className="text-purple-600 font-medium flex items-center hover:text-purple-700 transition-colors">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-purple-50 to-pink-50 px-8 py-4 border-t">
+                <ScrollToTopButton to="/university-partner-program" className="text-purple-600 font-medium flex items-center hover:text-purple-700 transition-colors">
                   View Partners
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </Link>
+                </ScrollToTopButton>
               </div>
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group">
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group relative min-h-[400px]">
               <div className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
                   <Users className="h-8 w-8 text-white" />
@@ -182,11 +183,11 @@ const PlacementGuaranteeProgram = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 px-8 py-4 border-t">
-                <Link to="/contact-us" className="text-green-600 font-medium flex items-center hover:text-green-700 transition-colors">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-green-50 to-emerald-50 px-8 py-4 border-t">
+                <ScrollToTopButton to="/contact-us" className="text-green-600 font-medium flex items-center hover:text-green-700 transition-colors">
                   Meet Mentors
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </Link>
+                </ScrollToTopButton>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Briefcase, GraduationCap, Globe, Award, Users, BookOpen, Laptop, Building } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState('all');
@@ -106,7 +106,7 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredServices.map(service => (
-            <Link 
+            <ScrollToTopButton 
               key={service.id} 
               to={service.link} 
               className="relative group overflow-hidden rounded-lg h-[300px] shadow-md hover:shadow-xl transition-all"
@@ -134,7 +134,7 @@ const Services = () => {
                   </svg>
                 </span>
               </div>
-            </Link>
+            </ScrollToTopButton>
           ))}
         </div>
       </div>
