@@ -18,9 +18,12 @@ const MaangCertificates = () => (
           <p className="text-xl mb-8">
             Earn industry-recognized certifications for Meta, Amazon, Apple, Netflix, and Google technologies
           </p>
-          <Link to="/mern-projects" className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all">
+          <ScrollToTopButton 
+                to="/mern-projects" 
+            className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all"
+          >
             Explore Certifications
-          </Link>
+          </ScrollToTopButton>
         </div>
       </div>
     </div>

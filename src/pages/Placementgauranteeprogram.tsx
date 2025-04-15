@@ -37,12 +37,14 @@ const PlacementGuaranteeProgram = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
             <Link 
               to="/mern-projects"
+              onClick={() => window.scrollTo(0, 0)}
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
             >
               Enroll Now
             </Link>
             <Link 
               to="/contact-us"
+              onClick={() => window.scrollTo(0, 0)}
               className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors duration-300"
             >
               View Details
@@ -118,10 +120,14 @@ const PlacementGuaranteeProgram = () => {
                 </ul>
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-blue-50 to-indigo-50 px-8 py-4 border-t">
-                <ScrollToTopButton to="/contact-us" className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors">
+                <Link 
+                  to="/contact-us"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="text-blue-600 font-medium flex items-center hover:text-blue-700 transition-colors"
+                >
                   Learn More
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </ScrollToTopButton>
+                </Link>
               </div>
             </div>
 
@@ -151,10 +157,14 @@ const PlacementGuaranteeProgram = () => {
                 </ul>
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-purple-50 to-pink-50 px-8 py-4 border-t">
-                <ScrollToTopButton to="/university-partner-program" className="text-purple-600 font-medium flex items-center hover:text-purple-700 transition-colors">
+                <Link 
+                  to="/university-partner-program"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="text-purple-600 font-medium flex items-center hover:text-purple-700 transition-colors"
+                >
                   View Partners
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </ScrollToTopButton>
+                </Link>
               </div>
             </div>
 
@@ -184,10 +194,14 @@ const PlacementGuaranteeProgram = () => {
                 </ul>
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-green-50 to-emerald-50 px-8 py-4 border-t">
-                <ScrollToTopButton to="/contact-us" className="text-green-600 font-medium flex items-center hover:text-green-700 transition-colors">
+                <Link 
+                  to="/contact-us"
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="text-green-600 font-medium flex items-center hover:text-green-700 transition-colors"
+                >
                   Meet Mentors
                   <ChevronRight className="h-4 w-4 ml-1" />
-                </ScrollToTopButton>
+                </Link>
               </div>
             </div>
           </div>
@@ -400,6 +414,7 @@ const PlacementGuaranteeProgram = () => {
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 shadow-lg animate-slide-up">
         <Link 
           to="/contact-us"
+          onClick={() => window.scrollTo(0, 0)}
           className="block w-full bg-gradient-to-r from-blue-900 to-indigo-900 hover:from-blue-800 hover:to-indigo-800 text-white py-4 rounded-xl font-semibold text-lg text-center transition-all duration-300 transform hover:scale-[1.02]"
         >
           Secure Your Future Now

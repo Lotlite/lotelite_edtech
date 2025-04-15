@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
 // import Carousel from 'react-spring-3d-carousel';
 // import CollegeSection from '../components/CollegeSection';
 // import Inti from '../../public/Inti.jpg';
@@ -135,12 +136,13 @@ const UniversityPartnerProgram = () => {
               Join our network of prestigious institutions and unlock global opportunities for your students through collaborative learning and cultural exchange.
             </p>
             <div className="flex gap-4">
-              <button className="px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-blue-50 transition-all">
+              <Link 
+                to='/contact-us' 
+                onClick={() => window.scrollTo(0, 0)}
+                className="px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-blue-50 transition-all mb-4"
+              >
                 Become a Partner
-              </button>
-              <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-all">
-                Learn More
-              </button>
+              </Link>
             </div>
           </div>
         </div>

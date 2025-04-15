@@ -42,7 +42,7 @@ const MernProjects = () => {
       id: 5,
       title: "Learn to Deploy Real Time Text to Image Generator- Gen AI",
       description: "Take your AI skills to production! Learn to deploy and scale your text-to-image generation system using modern cloud infrastructure.",
-      image: "https://images.unsplash.com/photo-1686191128892-3f0c61ac3286?ixlib=rb-4.0.3",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3",
       category: "ai-ml"
     },
     {
@@ -170,10 +170,10 @@ const MernProjects = () => {
                   <p className="text-gray-600 mb-4 text-sm line-clamp-3">{project.description}</p>
                   <div className="flex justify-between">
                     <button
-                      onClick={() => navigate('/contact-us')}
+                      onClick={() => handleLinkClick('/contact-us')}
                       className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors"
                     >
-                      Enroll Now
+                      Enroll Now
                     </button>
                     {/* <button 
                       onClick={() => handleDemo(project.id)}

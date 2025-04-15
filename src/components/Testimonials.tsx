@@ -7,7 +7,7 @@ const Testimonials = () => {
       id: 1,
       name: ' Aditya Kumbhar ',
       // role: 'Data Scientist at Google',
-      image: 't1.jpeg',
+      image: 't1.png',
       content: 'The Data Science program completely transformed my career. I went from being a marketing analyst to a data scientist at Google with a 70% salary increase. The curriculum was challenging but extremely relevant to what employers are looking for.',
       rating: 5,
       program: 'Data Science Certification'
@@ -16,7 +16,7 @@ const Testimonials = () => {
       id: 2,
       name: 'Swar Lende ',
       // role: 'Software Engineer at Amazon',
-      image: 't2.jpeg',
+      image: 't2.png',
       content: 'As someone with no prior coding experience, I was amazed at how quickly I was able to build real-world projects. The instructors were incredibly supportive and the career services helped me land my dream job at Amazon.',
       rating: 5,
       program: 'Full-Stack Development Bootcamp'
@@ -25,7 +25,7 @@ const Testimonials = () => {
       id: 3,
       name: 'Vedant Vasudeo ',
       // role: 'Product Manager at Microsoft',
-      image: 't3.jpeg',
+      image: 't3.png',
       content: 'The Product Management certification gave me the strategic framework and tools I needed to transition from engineering to product. The industry projects and mentorship were invaluable in helping me understand the role.',
       rating: 4,
       program: 'Product Management Certification'
@@ -34,7 +34,7 @@ const Testimonials = () => {
       id: 4,
       name: ' Rugved Joshi ',
       // role: 'Marketing Director at Netflix',
-      image: 't4.jpeg',
+      image: 't4.png',
       content: 'The Digital Marketing program provided me with cutting-edge strategies that I was able to implement immediately in my role. The ROI measurement framework alone was worth the investment in the program.',
       rating: 5,
       program: 'Digital Marketing Masters'

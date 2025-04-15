@@ -68,7 +68,11 @@ const TermsAndConditions = () => {
         </div>
 
         <div className="mt-8 text-center">
-          <Link to="/" className="text-[#0077B5] hover:text-[#005582] font-medium">
+          <Link 
+            to="/" 
+            onClick={() => window.scrollTo(0, 0)}
+            className="text-[#0077B5] hover:text-[#005582] font-medium"
+          >
             ← Back to Home
           </Link>
         </div>
