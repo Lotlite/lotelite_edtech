@@ -1,23 +1,30 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
-    chunkSizeWarningLimit: 1000,
+    outDir: 'dist',
+    sourcemap: false,
+    chunkSizeWarningLimit: 1600,
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-vendor': ['framer-motion', 'lucide-react'],
-        },
-      },
-    },
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react')) {
+              return 'vendor-react';
+            }
+            if (id.includes('framer-motion') || id.includes('lucide-react')) {
+              return 'vendor-ui';
+            }
+            return 'vendor';
+          }
+        }
+      }
+    }
   },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
+  server: {
+    port: 3000
+  }
 }); 
