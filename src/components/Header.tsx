@@ -61,6 +61,9 @@ const Header = () => {
             <ScrollToTopButton to="/contact-us" className="px-4 py-1.5 bg-[#0077B5] text-white font-medium rounded-md hover:bg-[#005d8f] transition-colors duration-200 text-sm">
               Contact Us
             </ScrollToTopButton>
+            <ScrollToTopButton to="/enroll" className="px-4 py-1.5 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors duration-200 text-sm">
+              Enroll Now
+            </ScrollToTopButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -105,6 +108,9 @@ const Header = () => {
                 </ScrollToTopButton>
                 <ScrollToTopButton to="/contact-us" className="w-full px-4 py-2 bg-[#0077B5] text-white font-medium rounded-md hover:bg-[#005d8f] transition-colors duration-200 text-center text-sm">
                   Contact Us
+                </ScrollToTopButton>
+                <ScrollToTopButton to="/enroll" className="w-full px-4 py-2 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors duration-200 text-center text-sm">
+                  Enroll Now
                 </ScrollToTopButton>
               </div>
             </div>

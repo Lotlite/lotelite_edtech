@@ -22,6 +22,9 @@ import MernProjects from './pages/MernProjects';
 import PlacementGuaranteeProgram from './pages/Placementgauranteeprogram';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
+import FourToFourProgram from './pages/4to4program';
+import MernStackCurriculum from './pages/mern-stack';
+import ProductBasedTraining from './pages/product-based';
 
 function App() {
   return (
@@ -72,6 +75,9 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsAndConditions />} />
+            <Route path="/enroll" element={<FourToFourProgram />} />
+            <Route path="/mern-stack" element={<MernStackCurriculum />} />
+            <Route path="/product-based" element={<ProductBasedTraining />} />
           </Route>
         </Routes>
       </div>

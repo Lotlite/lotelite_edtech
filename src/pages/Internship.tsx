@@ -532,10 +532,10 @@ const Internship = () => {
           >
             Enroll Now
           </ScrollToTopButton>
-        </div>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default Internship; 
