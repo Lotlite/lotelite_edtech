@@ -70,7 +70,7 @@ const FourToFourProgram = () => {
             <div className="h-56 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-[url('/hero-pattern.png')] opacity-10"></div>
               <div className="text-center text-white relative z-10 p-6">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Become a full stack Developer in 45 days</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Become a full stack Developer in 45 days + 15 days live projects</h2>
                 <p className="text-blue-100 text-lg">Comprehensive training for your tech career</p>
               </div>
             </div>

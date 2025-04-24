@@ -75,7 +75,7 @@ const ProductBasedTraining = () => {
         templateParams
       );
       
-      alert("Form submitted successfully!");
+      alert("Thank you for filling the form! Someone from our team will contact you shortly.");
       setFormData({
         name: '',
         email: '',

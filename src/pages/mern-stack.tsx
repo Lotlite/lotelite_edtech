@@ -63,7 +63,7 @@ const MernStackCurriculum = () => {
         reply_to: formData.email,
         phone_number: formData.phone,
         message: formData.message,
-        to_name: "Admin" // Adding recipient name for the email template
+        to_name: "Admin"
       };
 
       await emailjs.send(
@@ -73,7 +73,7 @@ const MernStackCurriculum = () => {
       );
       
       // Show success message
-      alert("Form submitted successfully!");
+      alert("Thank you for filling the form! Someone from our team will contact you shortly.");
       // Reset form
       setFormData({
         name: '',
