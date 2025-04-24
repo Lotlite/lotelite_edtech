@@ -5,8 +5,10 @@ import {
   Clock, Users, Award, CheckCircle, ChevronDown, ChevronUp,
   PlayCircle, FileText, BookOpen, Target, Briefcase, Download,
   Cpu, GitBranch, Shield, Zap, Brain, Rocket,
+  X, Mail, Phone, User,
   type LucideIcon
 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface Module {
   id: number;
@@ -17,12 +19,27 @@ interface Module {
   content?: string[];  // Make content optional since not all modules have it
 }
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
 const ProductBasedTraining = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [expandedModules, setExpandedModules] = useState<number[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
 
   useEffect(() => {
     setIsVisible(true);
+    emailjs.init("tkBN2nVNXK_Ly_VC-");
   }, []);
 
   const toggleModule = (moduleId: number) => {
@@ -31,6 +48,45 @@ const ProductBasedTraining = () => {
         ? prev.filter(id => id !== moduleId)
         : [...prev, moduleId]
     );
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        reply_to: formData.email,
+        phone_number: formData.phone,
+        message: formData.message,
+        to_name: "Admin"
+      };
+
+      await emailjs.send(
+        "service_vay1mr6",
+        "template_yc48n7t",
+        templateParams
+      );
+      
+      alert("Form submitted successfully!");
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+      setIsModalOpen(false);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send email. Please try again.");
+    }
   };
 
   const syllabus: Module[] = [
@@ -178,9 +234,12 @@ const ProductBasedTraining = () => {
                 <Users className="h-5 w-5" />
                 <span>1-on-1 Mentorship</span>
               </div>
-              <button className="ml-auto flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                <Download className="h-5 w-5" />
-                Download Syllabus
+              <button
+                onClick={() => setIsModalOpen(true)} 
+                className="ml-auto flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                <Mail className="h-5 w-5" />
+                Book a Course
               </button>
             </div>
           </div>
@@ -190,15 +249,9 @@ const ProductBasedTraining = () => {
       {/* Syllabus Section */}
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
-          <div className="flex justify-between items-center mb-8">
-            <div className="flex items-center gap-3">
-              <FileText className="h-6 w-6 text-white" />
-              <h2 className="text-2xl font-bold text-white">Syllabus</h2>
-            </div>
-            <button className="flex items-center gap-2 px-4 py-2 bg-[#2a2f3b] text-white rounded-lg hover:bg-[#3a3f4b] transition-colors">
-              <Download className="h-5 w-5" />
-              Download Complete Syllabus
-            </button>
+          <div className="flex items-center gap-3 mb-8">
+            <FileText className="h-6 w-6 text-white" />
+            <h2 className="text-2xl font-bold text-white">Syllabus</h2>
           </div>
 
           <div className="space-y-4">
@@ -243,8 +296,94 @@ const ProductBasedTraining = () => {
               </div>
             ))}
           </div>
+
+          {/* Book a Course Button */}
+          <div className="mt-12 text-center">
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold"
+            >
+              <Mail className="h-5 w-5" />
+              Book a Course
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-[#2a2f3b] rounded-xl w-full max-w-2xl p-6 relative animate-fade-in">
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute right-4 top-4 text-gray-400 hover:text-white"
+            >
+              <X className="h-6 w-6" />
+            </button>
+            
+            <h2 className="text-2xl font-bold text-white mb-6">Book Your Product-Based Training Course</h2>
+            
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="space-y-4">
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    placeholder="Your Name"
+                    required
+                    className="w-full bg-[#1a1f2b] text-white rounded-lg pl-10 pr-4 py-3 border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
+                  />
+                </div>
+
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="Email Address"
+                    required
+                    className="w-full bg-[#1a1f2b] text-white rounded-lg pl-10 pr-4 py-3 border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
+                  />
+                </div>
+
+                <div className="relative">
+                  <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    placeholder="Phone Number"
+                    required
+                    className="w-full bg-[#1a1f2b] text-white rounded-lg pl-10 pr-4 py-3 border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  placeholder="Additional Message (Optional)"
+                  className="w-full bg-[#1a1f2b] text-white rounded-lg px-4 py-3 border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors min-h-[100px]"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-blue-600 text-white rounded-lg py-3 font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
+              >
+                <Mail className="h-5 w-5" />
+                Book Now
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

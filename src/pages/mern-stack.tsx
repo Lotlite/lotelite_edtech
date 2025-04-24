@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { 
   ArrowLeft, Book, Code, Database, Server, Layout, 
   Clock, Users, Award, CheckCircle, ChevronDown, ChevronUp,
-  PlayCircle, FileText, BookOpen, Target, Briefcase, Download,
-  X, Mail, Phone, User, Calendar
+  PlayCircle, FileText, Target, Briefcase, Download,
+  X, Mail, Phone, User
 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
@@ -20,8 +20,6 @@ interface FormData {
   name: string;
   email: string;
   phone: string;
-  college: string;
-  preferredDate: string;
   message: string;
 }
 
@@ -33,8 +31,6 @@ const MernStackCurriculum = () => {
     name: '',
     email: '',
     phone: '',
-    college: '',
-    preferredDate: '',
     message: ''
   });
 
@@ -62,18 +58,20 @@ const MernStackCurriculum = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      const templateParams = {
+        from_name: formData.name,
+        reply_to: formData.email,
+        phone_number: formData.phone,
+        message: formData.message,
+        to_name: "Admin" // Adding recipient name for the email template
+      };
+
       await emailjs.send(
         "service_vay1mr6",
         "template_yc48n7t",
-        {
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          college: formData.college,
-          preferredDate: formData.preferredDate,
-          message: formData.message
-        }
+        templateParams
       );
+      
       // Show success message
       alert("Form submitted successfully!");
       // Reset form
@@ -81,8 +79,6 @@ const MernStackCurriculum = () => {
         name: '',
         email: '',
         phone: '',
-        college: '',
-        preferredDate: '',
         message: ''
       });
       setIsModalOpen(false);
@@ -243,9 +239,12 @@ const MernStackCurriculum = () => {
                 <Users className="h-5 w-5" />
                 <span>1-on-1 Mentorship</span>
               </div>
-              <button className="ml-auto flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                <Download className="h-5 w-5" />
-                Download Syllabus
+              <button
+                onClick={() => setIsModalOpen(true)} 
+                className="ml-auto flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                <Mail className="h-5 w-5" />
+                Book a Course
               </button>
             </div>
           </div>
@@ -255,15 +254,9 @@ const MernStackCurriculum = () => {
       {/* Syllabus Section */}
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
-          <div className="flex justify-between items-center mb-8">
-            <div className="flex items-center gap-3">
-              <FileText className="h-6 w-6 text-white" />
-              <h2 className="text-2xl font-bold text-white">Syllabus</h2>
-            </div>
-            <button className="flex items-center gap-2 px-4 py-2 bg-[#2a2f3b] text-white rounded-lg hover:bg-[#3a3f4b] transition-colors">
-              <Download className="h-5 w-5" />
-              Download Complete Syllabus
-            </button>
+          <div className="flex items-center gap-3 mb-8">
+            <FileText className="h-6 w-6 text-white" />
+            <h2 className="text-2xl font-bold text-white">Syllabus</h2>
           </div>
 
           <div className="space-y-4">
@@ -308,19 +301,17 @@ const MernStackCurriculum = () => {
               </div>
             ))}
           </div>
-        </div>
-      </div>
 
-      {/* Book a Course Button */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-5xl mx-auto text-center">
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold"
-          >
-            <Calendar className="h-5 w-5" />
-            Book a Course
-          </button>
+          {/* Book a Course Button */}
+          <div className="mt-12 text-center">
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold"
+            >
+              <Mail className="h-5 w-5" />
+              Book a Course
+            </button>
+          </div>
         </div>
       </div>
 
@@ -378,31 +369,6 @@ const MernStackCurriculum = () => {
                   />
                 </div>
 
-                <div className="relative">
-                  <BookOpen className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-                  <input
-                    type="text"
-                    name="college"
-                    value={formData.college}
-                    onChange={handleInputChange}
-                    placeholder="College Name"
-                    required
-                    className="w-full bg-[#1a1f2b] text-white rounded-lg pl-10 pr-4 py-3 border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
-                  />
-                </div>
-
-                <div className="relative">
-                  <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-                  <input
-                    type="date"
-                    name="preferredDate"
-                    value={formData.preferredDate}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full bg-[#1a1f2b] text-white rounded-lg pl-10 pr-4 py-3 border border-gray-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
-                  />
-                </div>
-
                 <textarea
                   name="message"
                   value={formData.message}
@@ -416,7 +382,7 @@ const MernStackCurriculum = () => {
                 type="submit"
                 className="w-full bg-blue-600 text-white rounded-lg py-3 font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
               >
-                <Calendar className="h-5 w-5" />
+                <Mail className="h-5 w-5" />
                 Book Now
               </button>
             </form>
